@@ -1,16 +1,13 @@
 <!doctype html>
 <html>
 <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/estilos.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/estilos.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
 </head>
 <body>
-		
- <i id="icon" class="fa fa-slideshare" style="text-shadow: rgb(0, 150, 105) 0px 0px 0px, rgb(0, 152, 106) 1px 1px 0px, rgb(0, 153, 108) 2px 2px 0px, rgb(0, 155, 109) 3px 3px 0px, rgb(0, 157, 110) 4px 4px 0px, rgb(0, 159, 111) 5px 5px 0px, rgb(0, 161, 113) 6px 6px 0px, rgb(0, 163, 114) 7px 7px 0px, rgb(0, 164, 115) 8px 8px 0px, rgb(0, 166, 117) 9px 9px 0px, rgb(0, 168, 118) 10px 10px 0px, rgb(0, 170, 119) 11px 11px 0px, rgb(0, 172, 120) 12px 12px 0px, rgb(0, 174, 122) 13px 13px 0px, rgb(0, 175, 123) 14px 14px 0px, rgb(0, 177, 124) 15px 15px 0px, rgb(0, 179, 126) 16px 16px 0px, rgb(0, 181, 127) 17px 17px 0px, rgb(0, 183, 128) 18px 18px 0px, rgb(0, 185, 129) 19px 19px 0px, rgb(0, 186, 131) 20px 20px 0px, rgb(0, 188, 132) 21px 21px 0px, rgb(0, 190, 133) 22px 22px 0px, rgb(0, 192, 135) 23px 23px 0px, rgb(0, 194, 136) 24px 24px 0px, rgb(0, 196, 137) 25px 25px 0px, rgb(0, 197, 138) 26px 26px 0px, rgb(0, 199, 140) 27px 27px 0px, rgb(0, 201, 141) 28px 28px 0px, rgb(0, 203, 142) 29px 29px 0px, rgb(0, 205, 144) 30px 30px 0px, rgb(0, 207, 145) 31px 31px 0px, rgb(0, 208, 146) 32px 32px 0px, rgb(0, 210, 147) 33px 33px 0px, rgb(0, 212, 149) 34px 34px 0px; font-size: 129px; color: rgb(255, 255, 255); height: 181px; width: 181px; line-height: 181px; border-radius: 12%; text-align: center; background-color: rgb(0, 214, 150);"></i> 
- 
 	<header>
 		<nav class="navbar navbar-default">
 			<div class="container">
@@ -104,7 +101,7 @@
 		<h2>Nossos Projetos</h2>
 
 		<div class="row">
-					<div class="col-sm-6 col-md-4 col-lg-3">
+			<div class="col-sm-6 col-md-4 col-lg-3">
 				<figure class="thumbnail">
 					<img src="assets/img/projetos/casa-castelo.png" alt="">
 					<figcaption class="caption">
@@ -234,8 +231,8 @@
 						<label for="contato-email">E-mail:</label>
 						<div class="input-group">
 							<div class="input-group-addon">@</div>
-			      	<input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail">
-		      	</div>
+							<input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail">
+						</div>
 					</div>
 
 					<div class="grupo-radio">
@@ -254,34 +251,34 @@
 						</div>
 					</div><!--
 
-					--><select class="contato-select form-control" name="tipo-solicitacao">
-						<option value="" disabled selected>Tipo de solicitação</option>
-					  <option value="casa">Casa</option>
-					  <option value="apartamento">Apartamento</option>
-					  <option value="mansao">Mansão</option>
-					</select>
+				--><select class="contato-select form-control" name="tipo-solicitacao">
+				<option value="" disabled selected>Tipo de solicitação</option>
+				<option value="casa">Casa</option>
+				<option value="apartamento">Apartamento</option>
+				<option value="mansao">Mansão</option>
+			</select>
 
-					<button type="submit" class="btn btn-primary">Enviar</button>
+			<button type="submit" class="btn btn-primary">Enviar</button>
 
-				</form>
-			</section>
-		</div>
-	</div>
+		</form>
+	</section>
+</div>
+</div>
 
-	<footer>
-		<address>
-			<strong>TopCasaFina Arquitetura</strong><br>
-			Rua Vergueiro, 3185, Vila Mariana<br>
-			São Paulo, SP<br>
-			Tel: (11) 5571-2751 ou 5083-3884
-		</address>
-		<address>
-			E-mail: contato.topcasafina@alura.com.br
-		</address>
-	</footer>
+<footer>
+	<address>
+		<strong>TopCasaFina Arquitetura</strong><br>
+		Rua Vergueiro, 3185, Vila Mariana<br>
+		São Paulo, SP<br>
+		Tel: (11) 5571-2751 ou 5083-3884
+	</address>
+	<address>
+		E-mail: contato.topcasafina@alura.com.br
+	</address>
+</footer>
 
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/js/navbar-animation-fix.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/navbar-animation-fix.js"></script>
 </body>
 </html>
