@@ -518,3 +518,17 @@ a:hover {
 .postitem_text {
     background-color:  white;
 }
+.auth-box {
+    margin: auto;
+
+}
+.glyphicon-search {
+    font-size: 16px;
+}
+.panel-heading {
+     background-color: black
+}
+.aba-panel {
+    background-color: yellow
+
+}
