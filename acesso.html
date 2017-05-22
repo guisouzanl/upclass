@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>UpClass - Postar</title>
+<title>UpClass - Acesso</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,33 +9,39 @@
 <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 <body>
-<div id="auth-box">    
-<div id="loginbox" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 panel panel-default">                    
+<div id="auth-box" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 panel panel-default">                    
 <div id="auth-box-top" class="panel-heading">
 <button class="tablink" onclick="isAuth('Login', this, 'red')" id="defaultOpen">Já tenho cadastro</button>
 <button class="tablink" onclick="isAuth('Register', this, 'green')">Desejo criar uma conta</button>
 </div>
 <div class="panel-body"
-<div id="login" class="tabcontent">
+<div id="Login" class="tabcontent">
   <form>
   <div class="container">
     <p><label><b>Usuário</b></label>
     <input type="text" name="uname" required></p>
     <p><label><b>Senha</b></label>
     <input type="password" name="psw" required></p>
-        
     <button type="submit">Login</button>
     <input type="checkbox" checked="checked"> Remember me
   </div>
-
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
+    </div>
 </form>
-<div id="signup" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+</div>
+<div id="Register" class="tabcontent">
+  		<h4>Registre-se</h4>
+		<fieldset>
+			<p>Nome completo: <input type="text" id="login" value="" placeholder="Digite o seu nome"></p>
+			<p>UF: <select type="text" id="uf" value="" placeholder="Digite o seu nome"></select></p>
+			<p>Cidade: <input type="text" id="login" value="" placeholder="Digite o seu nome"></p>
+			<p>E-mail: <input type="password" id="password" placeholder="Digite uma senha"></p>
+			<p>Senha: <input type="password" id="password" placeholder="Digite uma senha"></p>
+			<p>Repita a senha: <input type="password" id="password" placeholder="Digite uma senha"></p>
+			<p><button>Ok</button></p>
+		</fieldset>
 </div>
 </div>
 </div>
