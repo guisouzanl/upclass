@@ -532,3 +532,24 @@ a:hover {
     background-color: yellow
 
 }
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+ 
+}
