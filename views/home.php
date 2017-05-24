@@ -11,7 +11,6 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/estilos.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="text/javascript" src="assets/js/bootstrap-filestyle.min.js"> </script>
 </head>
 
 <body>
@@ -109,111 +108,6 @@
         </div>
       </div>
     </div>
-    <!-- chat box -->
-    <div id="chatbox" class="container-fluid">
-        <div class="row">
-          <div class="portlet portlet-default">
-            <div class="portlet-heading">
-              <div class="portlet-title">
-                <h4><i class="fa fa-circle text-green"></i> Mônica</h4>
-              </div>
-              <div class="portlet-widgets">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-white dropdown-toggle btn-md" data-toggle="dropdown">
-                    <i class="fa fa-circle text-green"></i> Status
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#"><i class="fa fa-circle text-green"></i> Online</a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-circle text-orange"></i> Away</a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-circle text-red"></i> Offline</a>
-                    </li>
-                  </ul>
-                </div>
-                <span class="divider"></span>
-                <a data-toggle="collapse" data-parent="#accordion" href="#chat"><i class="fa fa-chevron-down"></i></a>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <div id="chat" class="panel-collapse collapse in">
-              <div>
-                <div class="portlet-body chat-widget">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <p class="text-center text-muted small">January 1, 2014 at 12:23 PM</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="media">
-                        <a class="pull-left" href="#">
-                          <img class="media-object img-circle" src="http://lorempixel.com/30/30/people/1/" alt="">
-                        </a>
-                        <div class="media-body">
-                          <h4 class="media-heading">Mônica
-                            <span class="small pull-right">12:23 PM</span>
-                          </h4>
-                          <p>Esta caixa de chat é apenas um exemplo que poderá ser trocado a qualquer momento pelos devs.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="media">
-                        <a class="pull-left" href="#">
-                          <img class="media-object img-circle" src="http://lorempixel.com/30/30/people/7/" alt="">
-                        </a>
-                        <div class="media-body">
-                          <h4 class="media-heading">Catarina
-                            <span class="small pull-right">12:28 PM</span>
-                          </h4>
-                          <p>Did you have an update on purchase order #302?</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="media">
-                        <a class="pull-left" href="#">
-                          <img class="media-object img-circle" src="http://lorempixel.com/30/30/people/7/" alt="">
-                        </a>
-                        <div class="media-body">
-                          <h4 class="media-heading">Mônica
-                            <span class="small pull-right">12:39 PM</span>
-                          </h4>
-                          <p>No not yet, the transaction hasn't cleared yet. I will let you know as soon as everything goes through. Any
-                            idea where you want to get lunch today?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <hr>
-                  </div>  
-                </div>
-                <div class="portlet-footer">
-                  <form role="form">
-                    <div class="form-group">
-                      <textarea class="form-control" placeholder="Digite a mensagem..."></textarea>
-                    </div>
-                    <div class="form-group">
-                      <button type="button" class="btn btn-success pull-right">Enviar</button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <!-- /.col-md-4 -->
-          </div>
-        </div>
-      </div>
-    </div>
   </aside>
 </div>
 <!-- Postar vídeo -->
@@ -260,6 +154,7 @@
 crossorigin="anonymous"></script>
 <script src="assets/js/lib.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-filestyle.min.js"> </script>
 </body>
 
 </html>

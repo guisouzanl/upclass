@@ -159,7 +159,6 @@ h5 {
 i {
     text-decoration: none;
     font-size: 22px;
-    color: black;
 }
 
 button:hover,
@@ -322,180 +321,6 @@ a:hover {
 .closebtn:hover {
     color: #000;
 }
-
-
-/* chatbox - http://bootdey.com/snippets/view/Chat-box */
-.chat-widget {
-  position: relative; 
-  overflow-y: auto;
-}
-#chatbox {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    display: block;
-    margin-top: 5px;
-    border-radius: 4px;
-}
-
-.btn-white {
-    border-color: #cccccc;
-    color: #333333;
-    background-color: #ffffff;
-}
-
-.portlet .portlet-heading {
-    padding: 0 15px;
-}
-
-.portlet .portlet-heading h4 {
-    font-size: 14px;
-}
-
-.portlet .portlet-heading a {
-    color: #fff;
-}
-
-.portlet .portlet-heading a:hover,
-.portlet .portlet-heading a:active,
-.portlet .portlet-heading a:focus {
-    outline: none;
-}
-
-.portlet .portlet-widgets .dropdown-menu a {
-    color: #333;
-}
-
-.portlet .portlet-widgets ul.dropdown-menu {
-    min-width: 0;
-}
-
-.portlet .portlet-heading .portlet-title {
-    float: left;
-}
-
-.portlet .portlet-heading .portlet-title h4 {
-    vertical-align: middle;
-}
-
-.portlet .portlet-heading .portlet-widgets {
-    float: right;
-}
-
-.portlet .portlet-heading .portlet-widgets .tabbed-portlets {
-
-}
-
-.portlet .portlet-body {
-    background: #fff;
-}
-
-.portlet .portlet-footer {
- 
-    background: #e0e7e8;
-}
-
-.portlet .portlet-footer ul {
-    margin: 0;
-}
-
-.portlet-green,
-.portlet-green>.portlet-heading {
-    border-color: #16a085;
-}
-
-.portlet-green>.portlet-heading {
-    color: #fff;
-    background-color: #16a085;
-}
-
-.portlet-orange,
-.portlet-orange>.portlet-heading {
-    border-color: #f39c12;
-}
-
-.portlet-orange>.portlet-heading {
-    color: #fff;
-    background-color: #f39c12;
-}
-
-.portlet-blue,
-.portlet-blue>.portlet-heading {
-    border-color: #2980b9;
-}
-
-.portlet-blue>.portlet-heading {
-    color: #fff;
-    background-color: #2980b9;
-}
-
-.portlet-red,
-.portlet-red>.portlet-heading {
-    border-color: #e74c3c;
-}
-
-.portlet-red>.portlet-heading {
-    color: #fff;
-    background-color: #e74c3c;
-}
-
-.portlet-purple,
-.portlet-purple>.portlet-heading {
-    border-color: #8e44ad;
-}
-
-.portlet-purple>.portlet-heading {
-    color: #fff;
-    background-color: #8e44ad;
-}
-
-.portlet-default,
-.portlet-dark-blue,
-.portlet-default>.portlet-heading,
-.portlet-dark-blue>.portlet-heading {
-    border-color: #34495e;
-}
-
-.portlet-default>.portlet-heading,
-.portlet-dark-blue>.portlet-heading {
-    color: #fff;
-    background-color: #34495e;
-}
-
-.portlet-basic,
-.portlet-basic>.portlet-heading {
-    border-color: #333;
-}
-
-.portlet-basic>.portlet-heading {
-    border-bottom: 0px solid #333;
-    color: #333;
-    background-color: #fff;
-}
-
-@media(max-width:768px) {
-    .portlet {
-        margin-bottom: 0;
-    }
-    .card {
-        display: none;
-    }
-}
-
-.text-green {
-    color: #16a085;
-}
-
-.text-orange {
-    color: #f39c12;
-}
-
-.text-red {
-    color: #e74c3c;
-}
-
-.widget
-{
-    margin-bottom: 20px;
-}
 .sugestaoitem
 {
     height: 40px;
@@ -525,9 +350,6 @@ a:hover {
 .glyphicon-search {
     font-size: 16px;
 }
-.panel-heading {
-     background-color: black
-}
 .aba-panel {
     background-color: yellow
 
@@ -551,5 +373,4 @@ a:hover {
 
 /* Set default styles for tab content */
 .tabcontent {
- 
 }
