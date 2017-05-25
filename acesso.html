@@ -8,23 +8,24 @@
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/estilos.css">
 </head>
-<body>
-	<div id="auth-box" class="col-md-6 col-md-offset-3 panel panel-default">                    
+<body onload="ocultarElemento('Register')">
+	<div id="auth-box" class="col-md-6 col-md-offset-3 panel panel-default">
 		<div id="auth-box-top" class="panel-heading">
-			<button class="tablink" onclick="isAuth('Login', this, 'red')" id="defaultOpen">Já tenho cadastro</button>
-			<button class="tablink" onclick="isAuth('Register', this, 'green')">Desejo criar uma conta</button>
+			<button class="tablink" onclick="mostrarElemento('Login');ocultarElemento('Register');">Já tenho cadastro</button>
+			<button class="tablink"onclick="mostrarElemento('Register');ocultarElemento('Login');">Desejo criar uma conta</button>
 		</div>
 		<div class="panel-body">
-			<div id="Login" class="tabcontent">
+			<div  id="Login" class="tabcontent">
 				<fieldset>
 					<p><label>Usuário: </label><input type="text" name="uname" required></p>
 					<p><label>Senha: </label><input type="password" name="psw" required></p>
 					<p><button type="submit">Entrar </button>
-<button type="submit">Entrar com o facebook</button>
-					<input type="checkbox" checked="checked"> Lembrar minha senha</p>
-				</div>
-				<span class="psw"><a href="#">Esqueci minha senha</a></span>
-			</fieldset>
+						<button type="submit">Entrar com o facebook</button>
+						<input type="checkbox" checked="checked"> Lembrar minha senha</p>
+					</div>
+					<span class="psw"><a href="#">Esqueci minha senha</a></span>
+				</fieldset>
+			</div>
 			<div id="Register" class="tabcontent">
 				<fieldset>
 					<p>Nome completo: <input type="text" id="login" value="" placeholder="Digite o seu nome"></p>
@@ -39,7 +40,8 @@
 		</div>
 	</div>
 </div> 
-<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-<script type="text/javascript" src="assets/js/script.js"> </script>
-<script type="text/javascript" src="assets/js/bootstrap-filestyle.min.js"> </script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-filestyle.min.js"></script>
 </body>
