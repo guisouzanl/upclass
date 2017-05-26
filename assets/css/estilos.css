@@ -68,6 +68,9 @@ font-weight: bold;
 .panel {
     display: block;
 }
+.panel-body {
+    padding-top: 10px;
+}
 
 #materiais-sugeridos {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -286,7 +289,7 @@ a:hover {
 
 /* Sugestões de amigos - baseados nos Contact Chips do W3Schools */
 
-#sugestoes-amigos {
+#sugestoes-contatos {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -343,34 +346,29 @@ a:hover {
 .postitem_text {
     background-color:  white;
 }
-.auth-box {
-    margin: auto;
-
+/* Auth Page */
+.auth-box-button {
+    border-radius: 10px 10px 0px 0px;
+    border-style: none inset inset none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    font-size: 17px;
+    width: 25%;
+    margin: -2px;
+    background-color: lightgreen;
+}
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color:
 }
 .glyphicon-search {
     font-size: 16px;
 }
 .aba-panel {
     background-color: yellow
-
 }
-/* Style the tab buttons */
-.tablink {
-    background-color: #555;
-    color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-}
-
-/* Change background color of buttons on hover */
-.tablink:hover {
-    background-color: #777;
-}
-
 /* Set default styles for tab content */
 .tabcontent {
 }

@@ -10,9 +10,9 @@
 </head>
 <body onload="ocultarElemento('Register')">
 	<div id="auth-box" class="col-md-6 col-md-offset-3 panel panel-default">
-		<div id="auth-box-top" class="panel-heading">
-			<button class="tablink" onclick="mostrarElemento('Login');ocultarElemento('Register');">Já tenho cadastro</button>
-			<button class="tablink"onclick="mostrarElemento('Register');ocultarElemento('Login');">Desejo criar uma conta</button>
+		<div id="auth-box-top">
+			<button class="tablink auth-box-button login-tab" onclick="mostrarElemento('Login');ocultarElemento('Register')">Login</button>
+			<button class="tablink auth-box-button register-tab"onclick="mostrarElemento('Register');ocultarElemento('Login')">Registro</button>
 		</div>
 		<div class="panel-body">
 			<div  id="Login" class="tabcontent">
@@ -22,8 +22,9 @@
 					<p><button type="submit">Entrar </button>
 						<button type="submit">Entrar com o facebook</button>
 						<input type="checkbox" checked="checked"> Lembrar minha senha</p>
-					</div>
 					<span class="psw"><a href="#">Esqueci minha senha</a></span>
+					</div>
+				
 				</fieldset>
 			</div>
 			<div id="Register" class="tabcontent">

@@ -93,17 +93,17 @@
           </div>
         </div>
       </div>
-    <!-- Sugestões de amigos - baseado nos contact chips W3Schools 
+    <!-- Sugestões de contatos - baseado nos contact chips W3Schools 
     ADICIONAR FUNÇÃO ON HOVER PARA MOSTRAR DETALHES DO PERFIL-->
-    <div class="panel panel-heading" id="sugestoes-amigos">
-      <h4>Sugestões de amigos</h4><br>
+    <div class="panel panel-heading" id="sugestoes-contatos">
+      <h4>Sugestões de contatos</h4><br>
       <div panel class="panel">
         <div class="chip">
-          <img src="assets/img/empresa.jpg" alt="Person" width="96" height="96"> Catarina
+          <img src="assets/img/empresa.jpg" alt="Person" width="96" height="96"> Cláudia
           <span class="closebtn" onclick="this.parentElement.style.display='none'">+</span>
         </div>
         <div class="chip">
-          <img src="assets/img/empresa.jpg" alt="Person" width="96" height="96"> Eva
+          <img src="assets/img/empresa.jpg" alt="Person" width="96" height="96"> Roberto
           <span class="closebtn" onclick="this.parentElement.style.display='none'">+</span>
         </div>
       </div>

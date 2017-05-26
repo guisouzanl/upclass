@@ -1,4 +1,0 @@
-openCity = isAuth
-cityName = authForm
-London = Login
-Paris = Register
