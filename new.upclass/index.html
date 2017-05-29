@@ -105,6 +105,7 @@
             </nav>
             </div>
             <main class="mdl-layout__content mdl-color--grey-100">
+                <!-- div corpo -->
                 <div id="corpo" class="mdl-grid content">
                     <div id="post-bar" class="mdl-cell mdl-cell--8-col">
                         <div class="card-wide mdl-card mdl-shadow--2dp">
@@ -113,9 +114,9 @@
                             </div>
                             <div class="post_area">
                                 <form method="post" enctype="multipart/form-data">
-                                    <div class="mdl-textfield mdl-js-textfield">
+                                    <div class="card-wide mdl-textfield mdl-js-textfield">
                                         <textarea id="texto-post" name="post" class="mdl-textfield__input" type="text" rows="3"></textarea>
-                                        <label class="mdl-textfield__label" for="texto-post">Text lines...</label>
+                                        <label class="card-wide mdl-textfield__label" for="texto-post">Texto da publicação</label>
                                 </form>
                                 <!-- ADICIONAR ICON ATTACH>COLLAPSE>EXIBIR TIPOS DE ANEXOS>COLLAPSE>EXIBIR BOTÃO PRA UPLOAD 
                                 COPIAR JS DO HTML DE LOGIN-->
@@ -161,21 +162,23 @@
                     </div>
                     <!-- Paineis à direita -->
                     <div id="aside" class="mdl-cell mdl-cell--4-col">
-                        <div id="materiais-sugeridos">
-                            <h4>Materiais sugeridos para você:</h4>
-                            <div class="panel" id="sugestoes-conteudos">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">Como lidar com a violência na escola?</a>
-                                    <a href="#" class="list-group-item">Técnicas de memorização para alunos</a>
-                                    <a href="#" class="list-group-item">Trigonometria divertida</a>
-                                </div>
+                        <div id="materiais-sugeridos" class="mdl-card">
+                            <div class="mdl-card__title mdl-card--expand">
+                                <h4>Materiais sugeridos para você:</h4>
                             </div>
-                        </div>
+                            <div class="mdl-list">
+                                <a href="#" class="mdl-list__item">Como lidar com a violência na escola?</a>
+                                <a href="#" class="mdl-list__item">Técnicas de memorização para alunos</a>
+                                <a href="#" class="mdl-list__item">Trigonometria divertida</a>
+                            </div>
+                        </div><br>
                         <!-- Sugestões de contatos - baseado nos contact chips W3Schools 
     ADICIONAR FUNÇÃO ON HOVER PARA MOSTRAR DETALHES DO PERFIL-->
-                        <div class="" id="sugestoes-contatos">
-                            <h4>Sugestões de contatos</h4><br>
-                            <div panel class="panel">
+                        <div class="mdl-card" id="sugestoes-contatos">
+                            <div class="mdl-card__title mdl-card--expand">
+                                <h4>Sugestões de contatos</h4>
+                            </div>
+                            <div panel class="mdl-list">
                                 <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
     <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
     <span class="mdl-chip__text">Adrienne</span>
