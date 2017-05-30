@@ -267,7 +267,24 @@ _:-ms-input-placeholder,
 }
 
 .img-circle {
+    width: 100%;
+}
+
+.minicard {
+    max-height: 150px;
+    max-width: 150px;
+    margin-top: 10px;
+    color: white;
+    display: inline-block;
+}
+
+.mini-img-circle {
     width: 90%;
+    border-radius: 50%;
+}
+
+.minicard-legend {
+    background-color: gray;
 }
 
 .link-social {
@@ -333,8 +350,8 @@ div {
 }
 
 .card-event.mdl-card {
-    width: 256px;
-    height: 256px;
+    width: 200px;
+    height: 200px;
     background: #3E4EB8;
 }
 
