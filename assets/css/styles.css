@@ -452,9 +452,13 @@ div {
 }
 
 /* Auth Page */
+.auth-box {
+        padding: 25px 40px;
+        background-color: lightyellow;
+}
 
 .layout-transparent {
-  background-color: red;
+
 }
 .layout-transparent .mdl-layout__header,
 .layout-transparent .mdl-layout__drawer-button {
@@ -463,28 +467,10 @@ div {
   color: white;
 }
 
-.auth-box-button {
-    border-radius: 10px 10px 0px 0px;
-    border-style: none inset inset none;
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-    padding: 14px;
-    font-size: 17px;
-    width: 25%;
-    margin: -2px;
-    background-color: lightgreen;
-}
 /* Change background color of buttons on hover */
 .tablink:hover {
     background-color:
 }
 .glyphicon-search {
     font-size: 16px;
-}
-.aba-panel {
-    background-color: yellow
-}
-/* Set default styles for tab content */
-.tabcontent {
 }
