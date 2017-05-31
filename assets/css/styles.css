@@ -333,10 +333,6 @@ div {
     background-color: #009688;
 }
 
-.mdl-navigation {
-    background-color: #2BBBAD
-}
-
 .card-wide {
     width: 100%;
 }
@@ -449,4 +445,46 @@ div {
 
 .just-title {
     min-height: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/* Auth Page */
+
+.layout-transparent {
+  background-color: red;
+}
+.layout-transparent .mdl-layout__header,
+.layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+.auth-box-button {
+    border-radius: 10px 10px 0px 0px;
+    border-style: none inset inset none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    font-size: 17px;
+    width: 25%;
+    margin: -2px;
+    background-color: lightgreen;
+}
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color:
+}
+.glyphicon-search {
+    font-size: 16px;
+}
+.aba-panel {
+    background-color: yellow
+}
+/* Set default styles for tab content */
+.tabcontent {
 }
