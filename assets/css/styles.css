@@ -1011,6 +1011,41 @@ div {
     box-sizing: border-box;
 }
 
+.text-modal__border {
+    width: 75%;
+}
+
 .text-modal {
-    width: 500px;
+    width: 100%;
+}
+
+.mdl-card__actions {
+    padding: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.static {
+    position: static;
+}
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.margin-auto {
+    margin: auto;
 }
