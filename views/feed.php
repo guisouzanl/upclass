@@ -102,7 +102,10 @@ mdl-textfield--floating-label mdl-textfield--align-right margin-auto">
             </nav>
             </div>
             <main class="mdl-layout__content mdl-color--grey-100">
-                <!-- /drawer+header -->
+                <form>
+                    
+
+                                <!-- /drawer+header -->
                 <!-- div corpo -->
                 <div id="corpo" class="mdl-grid">
                     <!-- post-bar -->
@@ -122,7 +125,8 @@ mdl-textfield--floating-label mdl-textfield--align-right margin-auto">
                                     <div class="card-wide mdl-textfield mdl-js-textfield">
                                         <textarea id="texto-post" name="post" class="mdl-textfield__input" type="text" rows="3"></textarea>
                                         <label class="card-wide mdl-textfield__label" for="texto-post">Texto da publicação</label>
-                                </form>
+                                        
+                             
                                 </div>
                                 <!-- ADICIONAR ICON ATTACH>COLLAPSE>EXIBIR TIPOS DE ANEXOS>COLLAPSE>EXIBIR BOTÃO PRA UPLOAD 
  COPIAR JS DO HTML DE LOGIN-->
@@ -135,18 +139,7 @@ mdl-textfield--floating-label mdl-textfield--align-right margin-auto">
                                         <dialog class="mdl-dialog" id="event-panel">
                                             <div class="mdl-dialog__content">
 
-                                                <form action="#">
-                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                        <textarea class="mdl-textfield__input" type="text" rows="2" id="event-address"></textarea>
-                                                        <label class="mdl-textfield__label" for="event-address">Local do evento</label>
-                                                    </div>
-                                                </form>
-
-                                                <form action="/action_page.php">
-                                                    <p>Data e hora do evento:</p>
-                                                    <p><input type="datetime-local" name="eventtime"></p>
-                                                    <input type="submit" value="Pronto">
-                                                </form>
+                                              
                                             </div>
                                             <div class="mdl-dialog__actions">
                                                 <button type="button" class="mdl-button">Salvar</button>
@@ -156,8 +149,8 @@ mdl-textfield--floating-label mdl-textfield--align-right margin-auto">
 
                                     </div>
                                     <div class="mdl-tabs__panel" id="img-panel">
-                                        <input type="file" class="filestyle" data-input="false" data-buttonText=" Anexar" data-iconName="glyphicon glyphicon-inbox"
-                                            name="file"><br/>
+                                        <input type="file" name="foto" class="filestyle" data-input="false" data-buttonText=" Anexar" data-iconName="glyphicon glyphicon-inbox"
+                                            name="foto"><br/>
                                     </div>
                                     <div class="mdl-tabs__panel" id="file-panel">
                                         <input type="file" class="filestyle" data-input="false" data-buttonText=" Anexar" data-iconName="glyphicon glyphicon-inbox"
@@ -165,7 +158,7 @@ mdl-textfield--floating-label mdl-textfield--align-right margin-auto">
                                     </div>
                                     <div class="mdl-tabs__panel" id="youtube-panel">
                                         <input type="file" class="filestyle" data-input="false" data-buttonText=" Anexar" data-iconName="glyphicon glyphicon-inbox"
-                                            name="file"><br/>
+                                            name=""><br/>
                                     </div>
                                 </div>
                                 <div class="mdl-card__actions mdl-card--border">
@@ -178,8 +171,7 @@ mdl-textfield--floating-label mdl-textfield--align-right margin-auto">
                                             <li><a href="#">Grupo 3</a></li>
                                         </ul>
                                     </div>
-                                    <a id="btn-publicar" type="submit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" value="Enviar">Publicar</a>
-
+                                   <button id="btn-publicar" type="submit" class="btn btn-info" value="Enviar">Publicar</button>
                                 </div>
                             </div>
                             </form>
@@ -191,12 +183,11 @@ mdl-textfield--floating-label mdl-textfield--align-right margin-auto">
                                 <main class="mdl-layout__content">
                                     <div class="blog__posts mdl-grid">
                                         <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-                                         <div class="panel acervo">
-                                          <?php foreach($acervo as $postitem)
-                                          {
-                                           $this->loadView('postitem', $postitem);
-                                          }
-                                         ?>
+                                         <?php foreach($acervo as $postitem)
+              {
+                $this->loadView('postitem', $postitem);
+              }
+              ?>
                                             <div class="mdl-card__title mdl-color-text--grey-50">
                                                 <h3>On the road again</h3>
                                             </div>
@@ -234,6 +225,7 @@ mdl-textfield--floating-label mdl-textfield--align-right margin-auto">
                                                     <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
  <i class="material-icons" role="presentation">check</i><span class="visuallyhidden">add comment</span>
  </button>
+                                                </form>
                                                 </form>
                                                 <div class="comment mdl-color-text--grey-700">
                                                     <header class="comment__header">
@@ -379,11 +371,11 @@ mdl-textfield--floating-label mdl-textfield--align-right margin-auto">
                 </g>
                 <g id="Layer_5">
                     <polygon opacity="0.36" stroke-miterlimit="10" points="0,223.3 48,138.5 154.7,169 211,88.5
- 294.5,80.5 380,165.2 437,75.5 469.5,223.3 	" />
+ 294.5,80.5 380,165.2 437,75.5 469.5,223.3  " />
                 </g>
                 <g id="Layer_4">
                     <polygon stroke-miterlimit="10" points="469.3,222.7 1,222.7 48.7,166.7 155.7,188.3 212,132.7
- 296.7,128 380.7,184.3 436.7,125 	" />
+ 296.7,128 380.7,184.3 436.7,125    " />
                 </g>
             </g>
         </defs>
