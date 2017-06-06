@@ -38,15 +38,16 @@
 </head>
 
 <body>
+    <!-- drawer+header -->
     <div class="layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
             <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">Contatos e Grupos</span>
+                <span class="mdl-layout-title">Contatos</span>
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                     <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-       <i class="material-icons">search</i>
-      </label>
+              <i class="material-icons">search</i>
+            </label>
                     <div class="mdl-textfield__expandable-holder">
                         <input class="mdl-textfield__input" type="text" id="search">
                         <label class="mdl-textfield__label" for="search">Enter your query...</label>
@@ -54,17 +55,16 @@
                 </div>
                 <div>
                     <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="bottom-right-btn">
-      <i class="material-icons">more_vert</i>
-     </button>
+            <i class="material-icons">more_vert</i>
+          </button>
                     <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="bottom-right-btn">
-                        <li class="mdl-menu__item">About</li>
-                        <li class="mdl-menu__item">Contact</li>
-                        <li class="mdl-menu__item">Legal information</li>
+                        <li class="mdl-menu__item">Sair</li>
+                        <li class="mdl-menu__item">Suporte</li>
                     </ul>
                 </div>
             </div>
         </header>
-        <div class="drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <div class="drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50 fixed">
             <header class="drawer-header">
                 <img id="logo" src="" alt="logo + href to feed" class="navbar-brand" href="www.upclass.com">
             </header>
@@ -81,18 +81,12 @@
                 <div class="mdl-layout-spacer">
                     <div id="mini-atalhos">
                         <div id="btn-acervo"><button id="btn-acervo" class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
- <i class="material-icons">home</i>
+  <i class="material-icons">home</i>
 </button></div>
                         <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-acervo">
                             Meu Painel</div>
-                        <div id="btn-eventos"><button class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
- <i class="material-icons">event</i>
-</button></div>
-                        <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-eventos">
-                            Eventos
-                        </div>
                         <div id="btn-contatos"><button class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
- <i class="material-icons">supervisor_account</i>
+  <i class="material-icons">supervisor_account</i>
 </button></div>
                         <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-contatos">
                             Contatos
@@ -100,9 +94,11 @@
                     </div>
             </nav>
             </div>
+            <!-- /drawer+header -->
+
+            <!-- div corpo -->
             <main class="mdl-layout__content mdl-color--grey-100">
-                <!-- div corpo -->
-                <div id="corpo-contatos" class="mdl-grid">
+                <div id="corpo" class="mdl-grid">
                     <div id="group-bar" class="mdl-cell mdl-cell--7-col">
                         <div class="card-wide mdl-card just-title mdl-shadow--2dp">
                             <div class="mdl-card__title">
