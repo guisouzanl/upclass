@@ -269,6 +269,9 @@ _:-ms-input-placeholder,
 .img-circle {
     width: 100%;
 }
+.img-circle-sm {
+    width: 30%;
+}
 
 .minicard {
     max-height: 100px;
