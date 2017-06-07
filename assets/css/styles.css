@@ -329,7 +329,7 @@ div {
 }
 
 .drawer-header {
-    background-color: #009688;
+    background-color: #00e6ac;
 }
 
 .card-wide {
@@ -1030,6 +1030,7 @@ div {
 .static {
     position: static;
 }
+
 .absolute {
     position: absolute;
 }
