@@ -20,6 +20,7 @@ body {
 
 .drawer {
     border: none;
+        background-color: #008080;
 }
 
 
@@ -45,11 +46,14 @@ body {
     align-items: center;
 }
 
+.mdl-layout__header {
+    background-color: grey;
+}
+
 .drawer-header {
     box-sizing: border-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -58,6 +62,9 @@ body {
     justify-content: flex-end;
     padding: 16px;
     height: 64px;
+    display: block;
+    text-align: center;
+padding: 0px;
 }
 
 .avatar-dropdown {
@@ -270,7 +277,7 @@ _:-ms-input-placeholder,
     width: 100%;
 }
 .img-circle-sm {
-    width: 30%;
+    width: 100%;
 }
 
 .minicard {
@@ -334,10 +341,6 @@ div {
 
 #aside {
     height: 100%;
-}
-
-.drawer-header {
-    background-color: #00e6ac;
 }
 
 .card-wide {
