@@ -1,7 +1,7 @@
 html,
 body {
     font-family: 'Roboto', 'Helvetica', sans-serif;
-    background-color: #b2dfdb
+    background-color: #e6e6ff
 }
 
 .avatar {
@@ -20,7 +20,8 @@ body {
 
 .drawer {
     border: none;
-        background-color: #008080;
+        background-color: #006699;
+        box-shadow: 0 0 10px 0;
 }
 
 
@@ -47,7 +48,7 @@ body {
 }
 
 .mdl-layout__header {
-    background-color: grey;
+    background-color:#000033;
 }
 
 .drawer-header {
@@ -269,15 +270,26 @@ _:-ms-input-placeholder,
     margin: -5px 15px 35px 15px;
     text-align: center;
     color: white;
-    background-color: #008080;
+    background-color: #006699;
     padding: 15px 15px 50px 15px;
 }
 
 .img-circle {
     width: 100%;
 }
-.img-circle-sm {
+.logo-sm {
     width: 100%;
+}
+.logo-bg {
+    width: 20%;
+    height: 20%;
+    top: 0;
+}
+
+.brand {
+    top: 0;
+    display: block;
+    text-align: center;
 }
 
 .minicard {
@@ -351,15 +363,23 @@ div {
     width: 90%;
 }
 
+.mdl-card__actions {
+    background-color: #666666;
+}
+
 .mdl-card__title {
-    background-color: #39ac73;
+    background-color: #000033;
+    color: white;
     padding: 5px;
 }
 
 .card-event.mdl-card {
     width: 200px;
     height: 200px;
-    background: #3E4EB8;
+}
+
+.card-event{
+    background-color: #f2f2f2;
 }
 
 .card-event>.mdl-card__actions {
@@ -453,6 +473,10 @@ div {
     min-height: 2px;
 }
 
+.mdl-list {
+    text-align: center;
+}
+
 .just-title {
     min-height: 10px;
 }
@@ -467,6 +491,7 @@ div {
 .auth-box {
     padding: 25px 40px;
     background-color: lightyellow;
+    border-radius: 10px;
 }
 
 .layout-transparent {}

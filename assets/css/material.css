@@ -1317,12 +1317,6 @@ body {
     line-height: 20px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
     margin: 0;
     padding: 0;
@@ -6235,7 +6229,7 @@ input.mdl-button[type="submit"] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     line-height: normal;
     overflow: hidden;
@@ -6267,7 +6261,6 @@ input.mdl-button[type="submit"] {
     font-size: 16px;
     line-height: normal;
     width: 100%;
-    background-color: transparent;
     padding: 8px;
     box-sizing: border-box;
 }
