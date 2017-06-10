@@ -323,6 +323,11 @@ a:hover {
     margin: 3px;
 }
 
+#mini-atalhos {
+display: inline-block;
+text-align: center;
+}
+
 div {
     display: inline-block;
 }

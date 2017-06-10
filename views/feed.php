@@ -40,7 +40,7 @@
 <body>
     <!-- drawer+header -->
     <div class="layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-        <header class="header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+        <header class="header mdl-layout__header --grey-100 -text--grey-600">
             <div class="mdl-layout__header-row">
                 <span class="mdl-layout-title">Meu painel</span>
                 <div class="mdl-layout-spacer"></div>
@@ -64,7 +64,7 @@
                 </div>
             </div>
         </header>
-        <div class="drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50 fixed">
+        <div class="drawer mdl-layout__drawer --blue-grey-900 -text--blue-grey-50 fixed">
             <header class="drawer-header">
                 <img id="logo" src="" alt="logo + href to feed" class="navbar-brand" href="www.upclass.com">
             </header>
@@ -97,7 +97,7 @@
             <!-- /drawer+header -->
 
             <!-- div corpo -->
-            <main class="mdl-layout__content mdl-color--grey-100">
+            <main class="mdl-layout__content --grey-100">
 				<form>
                     
 
@@ -175,10 +175,10 @@
                 $this->loadView('postitem', $postitem);
               }
               ?>
-                                            <div class="mdl-card__title mdl-color-text--grey-50">
+                                            <div class="mdl-card__title -text--grey-50">
                                                 <h3>On the road again</h3>
                                             </div>
-                                            <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+                                            <div class="-text--grey-700 mdl-card__supporting-text meta">
                                                 <div class="minilogo"></div>
                                                 <div>
                                                     <strong>The Newist</strong>
@@ -190,7 +190,7 @@
                                                     <span class="visuallyhidden">favorites</span>
                                                 </div>
                                             </div>
-                                            <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+                                            <div class="-text--grey-700 mdl-card__supporting-text">
                                                 <p>
                                                     Cillum ullamco eu cupidatat excepteur Lorem minim sint quis officia irure irure sint fugiat nostrud. Pariatur Lorem irure
                                                     excepteur Lorem non irure ea fugiat adipisicing esse nisi ullamco proident
@@ -203,7 +203,7 @@
                                                     cillum. Aliquip enim officia ad commodo id.
                                                 </p>
                                             </div>
-                                            <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
+                                            <div class="-text--primary-contrast mdl-card__supporting-text comments">
                                                 <form>
                                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                                         <textarea rows=1 class="mdl-textfield__input" id="comment"></textarea>
@@ -214,7 +214,7 @@
  </button>
                                                 </form>
                                                 </form>
-                                                <div class="comment mdl-color-text--grey-700">
+                                                <div class="comment -text--grey-700">
                                                     <header class="comment__header">
                                                         <img src="images/co1.jpg" class="comment__avatar">
                                                         <div class="comment__author">
