@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/css/material.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -45,12 +45,11 @@
                 <span class="mdl-layout-title">Fulana</span>
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-              <i class="material-icons">search</i>
-            </label>
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
                     <div class="mdl-textfield__expandable-holder">
-                        <input class="mdl-textfield__input" type="text" id="search">
-                        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+                        <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
                     </div>
                 </div>
                 <div>
@@ -66,19 +65,17 @@
         </header>
         <div class="drawer mdl-layout__drawer blue-grey-900 -text--blue-grey-50 fixed">
             <header class="drawer-header">
-                <img id="logo" src="" alt="logo + href to feed" class="navbar-brand" href="www.upclass.com">
+                <img id="logo" src="assets/img/logos.png" alt="UPCLASS" class="logo-sm" href="www.upclass.com">
             </header>
             <nav class="navigation mdl-navigation">
                 <div class="card">
-                    <img src="assets/img/avatar_f.png" class="img-circle" alt="Fulana">
+                    <img src="assets/img/avatar_m.png" class="img-circle" alt="Mônica">
                     <h1>Fulana</h1>
                     <p class="title">Professora de geografia</p>
-                    <p>Colégio Santa Maria</p>
+                    <p>Colégio Marista</p>
                     <a href="#"><i class="fa fa-facebook link-social"></i></a>
                     <a href="#"><i class="fa fa-twitter link-social"></i></a>
                     <a href="#"><i class="fa fa-linkedin link-social"></i></a>
-                    <br><a href="#"><i class="fa fa-window-close link-social"></i></a>
-                    <a href="#"><i class="fa fa-plus-square link-social"></i></a>
                 </div>
                 <div class="mdl-layout-spacer"></div>
                     <div id="mini-atalhos">
@@ -93,7 +90,7 @@
                         <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-contatos">
                             Contatos
                         </div>
-                    </div>
+                
             </nav>
             </div>
             <!-- /drawer+header -->
@@ -215,9 +212,9 @@
                     </div>
                     <!-- Paineis à direita -->
                     <div id="aside" class="mdl-cell mdl-cell--4-col">
-                        <div id="materiais-sugeridos" class="mdl-card mdl-shadow--2dp">
+                        <div id="notificacoes-box" class="mdl-card mdl-shadow--2dp">
                             <div class="mdl-card__title">
-                                <h4>Materiais sugeridos para você:</h4>
+                                <h4 class="mdl-card__title-text">Novidades na sua rede</h4>
                             </div>
                             <div class="mdl-list">
                                 <a href="#" class="mdl-navigation__link mdl-list__item">Como lidar com a violência na escola?</a>
@@ -225,40 +222,42 @@
                                 <a href="#" class="mdl-navigation__link mdl-list__item">Trigonometria divertida</a>
                             </div>
                         </div><br>
+
                         <!-- Pedidos de contatos -->
                         <div class="mdl-card mdl-shadow--2dp" id="pedidos-contato">
                             <div class="mdl-card__title">
-                                <h4>Solicitações pendentes</h4>
+                                <h4 class="mdl-card__title-text">Solicitações pendentes</h4>
                             </div>
                             <div panel class="mdl-list">
                             </div>
                         </div><br>
-                        <!-- Sugestões de contatos - baseado nos contact chips W3Schools 
-    ADICIONAR FUNÇÃO ON HOVER PARA MOSTRAR DETALHES DO PERFIL-->
+                        <!-- !Pedidos de contatos -->
+                        <!-- Sugestões de contatos -->
                         <div class="mdl-card mdl-shadow--2dp" id="sugestoes-contatos">
                             <div class="mdl-card__title">
-                                <h4>Sugestões de contatos</h4>
+                                <h4 class="mdl-card__title-text">Sugestões de contatos</h4>
                             </div>
-                            <div panel class="mdl-list">
+                            <div class="mdl-list">
                                 <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
-    <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
-    <span class="mdl-chip__text">Adrienne</span>
+ <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
+ <span class="mdl-chip__text">Adrienne</span>
                                 <a href="#" class="mdl-chip__action"><i class="material-icons">add</i></a>
                                 </span><br>
                                 <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
-    <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
-    <span class="mdl-chip__text">Roberto</span>
+ <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
+ <span class="mdl-chip__text">Roberto</span>
                                 <a href="#" class="mdl-chip__action"><i class="material-icons">add</i></a>
                                 </span><br>
                                 <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
-    <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
-    <span class="mdl-chip__text">Joana</span>
+ <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
+ <span class="mdl-chip__text">Joana</span>
                                 <a href="#" class="mdl-chip__action"><i class="material-icons">add</i></a>
                                 </span><br>
-
                             </div>
                         </div>
+                        <!-- !Sugestões de contatos -->
                     </div>
+                    <!-- !Paineis à direita -->
                 </div>
         </div>
         </main>

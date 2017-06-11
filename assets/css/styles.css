@@ -265,7 +265,7 @@ _:-ms-input-placeholder,
 
 .card {
     max-height: 500px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: -5px 15px 35px 15px;
     text-align: center;
@@ -277,6 +277,10 @@ _:-ms-input-placeholder,
 .img-circle {
     width: 100%;
     border-radius: 50%;
+}
+
+.img-circle-sm {
+    width: 30%;
 }
 
 .logo-sm {
@@ -1085,4 +1089,13 @@ div {
 
 .margin-auto {
     margin: auto;
+}
+
+.editprofile-box {
+    padding: 10px;
+    margin: auto;
+}
+
+.mdl-card-body {
+    padding: 3%;
 }

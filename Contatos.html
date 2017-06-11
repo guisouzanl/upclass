@@ -33,11 +33,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/css/material.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+    <!-- drawer+header -->
     <!-- drawer+header -->
     <div class="layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="header mdl-layout__header grey-100 -text--grey-600">
@@ -45,12 +46,11 @@
                 <span class="mdl-layout-title">Contatos</span>
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-              <i class="material-icons">search</i>
-            </label>
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
                     <div class="mdl-textfield__expandable-holder">
-                        <input class="mdl-textfield__input" type="text" id="search">
-                        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+                        <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
                     </div>
                 </div>
                 <div>
@@ -66,11 +66,11 @@
         </header>
         <div class="drawer mdl-layout__drawer blue-grey-900 -text--blue-grey-50 fixed">
             <header class="drawer-header">
-                <img id="logo" src="" alt="logo + href to feed" class="navbar-brand" href="www.upclass.com">
+                <img id="logo" src="assets/img/logos.png" alt="UPCLASS" class="logo-sm" href="www.upclass.com">
             </header>
             <nav class="navigation mdl-navigation">
                 <div class="card">
-                    <img src="assets/img/avatar_f.png" class="img-circle" alt="Mônica">
+                    <img src="assets/img/avatar_m.png" class="img-circle" alt="Mônica">
                     <h1>Mônica</h1>
                     <p class="title">Professora de matemática</p>
                     <p>Colégio Tiradentes</p>
@@ -79,19 +79,19 @@
                     <a href="#"><i class="fa fa-linkedin link-social"></i></a>
                 </div>
                 <div class="mdl-layout-spacer"></div>
-                    <div id="mini-atalhos">
-                        <div id="btn-acervo"><button id="btn-acervo" class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
+                <div id="mini-atalhos">
+                    <div id="btn-acervo"><button id="btn-acervo" class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
   <i class="material-icons">home</i>
 </button></div>
-                        <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-acervo">
-                            Meu Painel</div>
-                        <div id="btn-contatos"><button class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
+                    <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-acervo">
+                        Meu Painel</div>
+                    <div id="btn-contatos"><button class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
   <i class="material-icons">supervisor_account</i>
 </button></div>
-                        <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-contatos">
-                            Contatos
-                        </div>
+                    <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-contatos">
+                        Contatos
                     </div>
+
             </nav>
             </div>
             <!-- /drawer+header -->
@@ -99,6 +99,7 @@
             <!-- div corpo -->
             <main class="mdl-layout__content grey-100">
                 <div id="corpo" class="mdl-grid">
+                    <!-- group-bar -->
                     <div id="group-bar" class="mdl-cell mdl-cell--7-col">
                         <div class="card-wide mdl-card just-title mdl-shadow--2dp">
                             <div class="mdl-card__title">
@@ -144,7 +145,9 @@
                                 </ul>
                             </div>
                         </div>
-                                                </div>
+                    </div>
+                    <!-- /group-bar -->
+                    <!-- people-bar -->
                     <div id="people-bar" class="mdl-cell mdl-cell--5-col">
                         <div class="card-wide mdl-card just-title mdl-shadow--2dp">
                             <div class="mdl-card__title">
@@ -187,9 +190,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="contatos-list" class="mdl-cell mdl-cell--4-col">
+                    <!-- /people-bar -->
+                <!-- contatos-list -->
+                <div id="contatos-list" class="mdl-cell mdl-cell--12-col">
                     <div class="card-wide mdl-card just-title mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <h2 class="mdl-card__title-text">Professores conectados:</h2>
@@ -259,15 +262,8 @@
                             <p>Colégio Tiradentes</p>
                         </div>
                     </div>
-                    <div class="minicard">
-                        <img id="contato1" src="assets/img/avatar_f.png" class="mini-img-circle" alt="Mônica">
-                        <div class="mdl-tooltip" for="contato1">
-                            <h5>Mônica</h5><br>
-                            <h6>Professora de matemática</h6>
-                            <p>Colégio Tiradentes</p>
-                        </div>
-                    </div>
                 </div>
+                <!-- /contatos-list -->
         </div>
     </div>
     </main>

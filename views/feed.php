@@ -33,24 +33,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/css/material.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
     <!-- drawer+header -->
     <div class="layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-        <header class="header mdl-layout__header --grey-100 -text--grey-600">
+        <header class="header mdl-layout__header grey-100 -text--grey-600">
             <div class="mdl-layout__header-row">
                 <span class="mdl-layout-title">Meu painel</span>
                 <div class="mdl-layout-spacer"></div>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-              <i class="material-icons">search</i>
-            </label>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
                     <div class="mdl-textfield__expandable-holder">
-                        <input class="mdl-textfield__input" type="text" id="search">
-                        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+                        <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
                     </div>
                 </div>
                 <div>
@@ -64,13 +63,13 @@
                 </div>
             </div>
         </header>
-        <div class="drawer mdl-layout__drawer --blue-grey-900 -text--blue-grey-50 fixed">
+        <div class="drawer mdl-layout__drawer blue-grey-900 -text--blue-grey-50 fixed">
             <header class="drawer-header">
-                <img id="logo" src="" alt="logo + href to feed" class="navbar-brand" href="www.upclass.com">
+                <img id="logo" src="assets/img/logos.png" alt="UPCLASS" class="logo-sm" href="www.upclass.com">
             </header>
             <nav class="navigation mdl-navigation">
                 <div class="card">
-                    <img src="assets/img/avatar_f.png" class="img-circle" alt="Mônica">
+                    <img src="assets/img/avatar_m.png" class="img-circle" alt="Mônica">
                     <h1>Mônica</h1>
                     <p class="title">Professora de matemática</p>
                     <p>Colégio Tiradentes</p>
@@ -78,7 +77,7 @@
                     <a href="#"><i class="fa fa-twitter link-social"></i></a>
                     <a href="#"><i class="fa fa-linkedin link-social"></i></a>
                 </div>
-                <div class="mdl-layout-spacer">
+                <div class="mdl-layout-spacer"></div>
                     <div id="mini-atalhos">
                         <div id="btn-acervo"><button id="btn-acervo" class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
   <i class="material-icons">home</i>
@@ -91,7 +90,7 @@
                         <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-contatos">
                             Contatos
                         </div>
-                    </div>
+                
             </nav>
             </div>
             <!-- /drawer+header -->
@@ -110,7 +109,7 @@
                             <div class="mdl-card__title">
                                 <h2 class="mdl-card__title-text">Postar</h2>
                             </div>
-                            <div class="post_area">
+                            <div class="mdl-card-body">
                                 <form action="#">
                                     <div class="mdl-textfield mdl-js-textfield">
                                         <input class="mdl-textfield__input" type="text" id="titulo-post">
@@ -121,22 +120,24 @@
                                     <div class="card-wide mdl-textfield mdl-js-textfield">
                                         <textarea id="texto-post" name="post" class="mdl-textfield__input" type="text" rows="3"></textarea>
                                         <label class="card-wide mdl-textfield__label" for="texto-post">Texto da publicação</label>
-                                
+                                </form>
                                 </div>
                                 <!-- ADICIONAR ICON ATTACH>COLLAPSE>EXIBIR TIPOS DE ANEXOS>COLLAPSE>EXIBIR BOTÃO PRA UPLOAD COPIAR JS DO HTML DE LOGIN-->
                                 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
                                     <div class="mdl-tabs__tab-bar">
-                                        <a href="#img-panel" class="mdl-tabs__tab"><i class="material-icons">collections</i></a>
-                                        <a href="#file-panel" class="mdl-tabs__tab"><i class="material-icons">insert_drive_file</i></a>
-                                        <a href="#youtube-panel" class="mdl-tabs__tab"><i class="material-icons">video_library</i></a>
-                           
-
-                                              
-                                            </div>
-                              
+                                        <a href="#img-panel" class="mdl-tabs__tab">
+                                            <i class="material-icons">collections</i>
+                                        </a>
+                                        <a href="#file-panel" class="mdl-tabs__tab">
+                                            <i class="material-icons">insert_drive_file</i>
+                                        </a>
+                                        <a href="#youtube-panel" class="mdl-tabs__tab">
+                                            <i class="material-icons">video_library</i>
+                                        </a>
+                                    </div>
                                     <div class="mdl-tabs__panel" id="img-panel">
-                                        <input type="file" name="foto" class="filestyle" data-input="false" data-buttonText=" Anexar" data-iconName="glyphicon glyphicon-inbox"
-                                            name="foto"><br/>
+                                        <input type="file" class="filestyle" data-input="false" data-buttonText=" Anexar" data-iconName="glyphicon glyphicon-inbox"
+                                            name="file"><br/>
                                     </div>
                                     <div class="mdl-tabs__panel" id="file-panel">
                                         <input type="file" class="filestyle" data-input="false" data-buttonText=" Anexar" data-iconName="glyphicon glyphicon-inbox"
@@ -144,10 +145,11 @@
                                     </div>
                                     <div class="mdl-tabs__panel" id="youtube-panel">
                                         <input type="file" class="filestyle" data-input="false" data-buttonText=" Anexar" data-iconName="glyphicon glyphicon-inbox"
-                                            name=""><br/>
+                                            name="file"><br/>
                                     </div>
                                 </div>
-                                <div class="mdl-card__actions mdl-card--border">
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
                                     <div class="dropup">
                                         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Selecionar grupo
  <span class="caret"></span></button>
@@ -157,12 +159,12 @@
                                             <li><a href="#">Grupo 3</a></li>
                                         </ul>
                                     </div>
-                                   <button id="btn-publicar" type="submit" class="btn btn-info" value="Enviar">Publicar</button>
+                                    <a id="btn-publicar" type="submit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect btn-success"
+                                        value="Enviar">Publicar</a>
                                 </div>
-                            </div>
-                            </form>
-                        </div><br>
-                        <!-- /post-bar -->
+                        </div>
+                    <br>
+                    <!-- /post-bar -->
 
                         <!-- posts-salvos -->
                         <div id="posts-salvos" class="">

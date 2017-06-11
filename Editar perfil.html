@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/css/material.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -45,12 +45,11 @@
                 <span class="mdl-layout-title">Meu painel</span>
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-              <i class="material-icons">search</i>
-            </label>
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
                     <div class="mdl-textfield__expandable-holder">
-                        <input class="mdl-textfield__input" type="text" id="search">
-                        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+                        <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
                     </div>
                 </div>
                 <div>
@@ -66,11 +65,11 @@
         </header>
         <div class="drawer mdl-layout__drawer blue-grey-900 -text--blue-grey-50 fixed">
             <header class="drawer-header">
-                <img id="logo" src="" alt="logo + href to feed" class="navbar-brand" href="www.upclass.com">
+                <img id="logo" src="assets/img/logos.png" alt="UPCLASS" class="logo-sm" href="www.upclass.com">
             </header>
             <nav class="navigation mdl-navigation">
                 <div class="card">
-                    <img src="assets/img/avatar_f.png" class="img-circle" alt="Mônica">
+                    <img src="assets/img/avatar_m.png" class="img-circle" alt="Mônica">
                     <h1>Mônica</h1>
                     <p class="title">Professora de matemática</p>
                     <p>Colégio Tiradentes</p>
@@ -91,7 +90,7 @@
                         <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-contatos">
                             Contatos
                         </div>
-                    </div>
+                
             </nav>
             </div>
             <!-- /drawer+header -->
@@ -105,7 +104,7 @@
                             <div class="mdl-card__title">
                                 <h2 class="mdl-card__title-text">Editar o perfil</h2>
                             </div>
-                            <div class="editprofile_box">
+                            <div class="editprofile-box">
                                  <img src="assets/img/avatar_f.png" class="img-circle-sm" alt="Mônica">
                                  <div class="mdl-tabs__panel" id="img-panel">
                                         <input type="file" class="filestyle" data-input="false" data-buttonText=" Trocar a foto do perfil" data-iconName="glyphicon glyphicon-inbox" name="file"><br/>
@@ -139,7 +138,9 @@
                                         <label class="mdl-textfield__label" for="repetirsenha">REPITA A SENHA</label>
                                     </div>
                                 </form>
-
+                                <div>
+                                    <br><a id="btn-publicar" type="submit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect btn-success" value="Enviar">Salvar alterações</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -147,10 +148,21 @@
                     <!-- /seditprofile-box -->
                     <!-- Paineis à direita -->
                     <div id="aside" class="mdl-cell mdl-cell--4-col">
-                                                <!-- Pedidos de contatos -->
+                        <div id="notificacoes-box" class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h4 class="mdl-card__title-text">Novidades na sua rede</h4>
+                            </div>
+                            <div class="mdl-list">
+                                <a href="#" class="mdl-navigation__link mdl-list__item">Como lidar com a violência na escola?</a>
+                                <a href="#" class="mdl-navigation__link mdl-list__item">Técnicas de memorização para alunos</a>
+                                <a href="#" class="mdl-navigation__link mdl-list__item">Trigonometria divertida</a>
+                            </div>
+                        </div><br>
+
+                        <!-- Pedidos de contatos -->
                         <div class="mdl-card mdl-shadow--2dp" id="pedidos-contato">
                             <div class="mdl-card__title">
-                                <h4>Solicitações pendentes</h4>
+                                <h4 class="mdl-card__title-text">Solicitações pendentes</h4>
                             </div>
                             <div panel class="mdl-list">
                             </div>
@@ -159,9 +171,9 @@
                         <!-- Sugestões de contatos -->
                         <div class="mdl-card mdl-shadow--2dp" id="sugestoes-contatos">
                             <div class="mdl-card__title">
-                                <h4>Sugestões de contatos</h4>
+                                <h4 class="mdl-card__title-text">Sugestões de contatos</h4>
                             </div>
-                            <div panel class="mdl-list">
+                            <div class="mdl-list">
                                 <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
  <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
  <span class="mdl-chip__text">Adrienne</span>
