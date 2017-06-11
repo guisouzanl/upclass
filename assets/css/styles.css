@@ -276,20 +276,17 @@ _:-ms-input-placeholder,
 
 .img-circle {
     width: 100%;
+    border-radius: 50%;
 }
+
 .logo-sm {
     width: 100%;
 }
-.logo-bg {
-    width: 20%;
-    height: 20%;
-    top: 0;
-}
 
-.brand {
-    top: 0;
-    display: block;
-    text-align: center;
+.logo-bg {
+position: relative;
+height: 20%;
+width: 20%;
 }
 
 .minicard {
@@ -489,9 +486,12 @@ div {
 /* Auth Page */
 
 .auth-box {
+    width: 100%;
+    height: 100%;
     padding: 25px 40px;
     background-color: lightyellow;
     border-radius: 10px;
+    margin-top: 200px;
 }
 
 .layout-transparent {}
