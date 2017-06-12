@@ -90,7 +90,7 @@
                         <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-contatos">
                             Contatos
                         </div>
-                
+                </div>
             </nav>
             </div>
             <!-- /drawer+header -->
