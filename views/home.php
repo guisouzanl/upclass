@@ -137,7 +137,7 @@
                                     </div>
                                     <div class="mdl-tabs__panel" id="img-panel">
                                         <input type="file" class="filestyle" data-input="false" data-buttonText=" Anexar" data-iconName="glyphicon glyphicon-inbox"
-                                            name="file"><br/>
+                                            name="foto"><br/>
                                     </div>
                                     <div class="mdl-tabs__panel" id="file-panel">
                                         <input type="file" class="filestyle" data-input="false" data-buttonText=" Anexar" data-iconName="glyphicon glyphicon-inbox"
@@ -145,7 +145,7 @@
                                     </div>
                                     <div class="mdl-tabs__panel" id="youtube-panel">
                                         <input type="file" class="filestyle" data-input="false" data-buttonText=" Anexar" data-iconName="glyphicon glyphicon-inbox"
-                                            name="file"><br/>
+                                            name=""><br/>
                                     </div>
                                 </div>
                             </div>
