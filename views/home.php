@@ -17,6 +17,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Material Design Lite">
     <link rel="apple-touch-icon-precomposed" href="assets/img/ios-desktop.png">
+    
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-Tile" content="assets/img/touch/ms-touch-icon-144x144-precomposed.png">
@@ -34,7 +35,8 @@
     <link rel="stylesheet" href="assets/css/material.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="<?php echo BASE; ?>assets/css/styles.css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -57,7 +59,8 @@
             <i class="material-icons">more_vert</i>
           </button>
                     <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="bottom-right-btn">
-                        <li class="mdl-menu__item">Sair</li>
+                        <li class="mdl-menu__item">Editar Perfil</li>
+                        <li><a href="<?php echo BASE; ?>login/sair" class="mdl-menu__item">Sair</a></li>
                         <li class="mdl-menu__item">Suporte</li>
                     </ul>
                 </div>
@@ -174,10 +177,10 @@
                                     <div class="blog__posts mdl-grid">
                                         <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
                                          <?php foreach($acervo as $postitem)
-              {
-                $this->loadView('postitem', $postitem);
-              }
-              ?>
+                                          {
+                                            $this->loadView('postitem', $postitem);
+                                          }
+                                          ?>
                                             <div class="mdl-card__title -text--grey-50">
                                                 <h3>On the road again</h3>
                                             </div>

@@ -2,7 +2,7 @@
 require 'environment.php';
 
 // se mudar de pasta é só mudar aqui
-define("BASE", "http://projetox.pc/upclass");
+define("BASE", "http://projetox.pc/upclass/");
 
 global $config;
 $config = array();

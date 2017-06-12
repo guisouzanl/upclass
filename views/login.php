@@ -64,12 +64,15 @@
                     <div class="mdl-tabs__panel is-active" id="login">
                         <fieldset>
                             <br>
+                            <?php if(!empty($erro)):?>
+                            <div class="alert alert-danger"><?php echo $erro; ?></div>
+                         <?php endif; ?>
                             <form method="POST">
-                            <p><label>E-mail: </label><input type="email" name="email" id= "email"required></p>
+                            <p><label for="email">E-mail: </label><input type="email" name="email" id= "email" required></p>
                             <br>
-                            <p><label>Senha: </label><input type="password" name="senha" id="senha" required></p>
+                            <p><label for="senha">Senha: </label><input type="password" name="senha" id="senha" required></p>
                             <br>
-                            <p><button type="submit">Entrar </button>
+                            <p><button type="submit">Entrar</button>
                                 <button type="submit">Entrar com o facebook</button>
                                 <input type="checkbox" checked="checked"> Lembrar minha senha</p>
                             <span class="psw"><a href="#">Esqueci minha senha</a></span>
@@ -79,13 +82,19 @@
                     <div class="mdl-tabs__panel" id="registro">
                         <fieldset>
                             <br>
-                            <p>Nome completo: <input type="text" id="login" value="" placeholder="Digite o seu nome"></p>
+                            <?php if(!empty($erro)):?>
+                            <div class="alert alert-danger"><?php echo $erro; ?></div>
+                            <?php endif; ?>
+                            <form method="POST">
+                            <p><label for="nome">Nome completo: <input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+                           </label>
+                           </p>
                             
-                            <p>E-mail: <input type="password" id="password" placeholder="Digite uma senha"></p>
-                            <p>Senha: <input type="password" id="password" placeholder="Digite uma senha"></p>
-                            <p>Repita a senha: <input type="password" id="password" placeholder="Digite uma senha"></p>
+                            <p><label for="email">E-mail: <input type="email" id="email" name="email"  placeholder="Informe um e-mail válido"></p>
+                            <p><label for="senha">Senha: <input type="password" id="senha" id="senha" placeholder="Digite uma senha"></p>
                             <br>
                             <p><button>Ok</button></p>
+                            </form>
                         </fieldset>
                     </div>
                 </div>

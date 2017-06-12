@@ -1099,3 +1099,9 @@ div {
 .mdl-card-body {
     padding: 3%;
 }
+.postitem
+{
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
