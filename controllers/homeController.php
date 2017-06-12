@@ -25,7 +25,7 @@ class homeController extends controller
 
 		$dados['acervo'] = $p->getAcervo();
 
-		$this->loadTemplate('feed', $dados);
+		$this->loadTemplate('home', $dados);
 	}
 
 	
