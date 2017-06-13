@@ -20,8 +20,8 @@ body {
 
 .drawer {
     border: none;
-        background-color: #006699;
-        box-shadow: 0 0 10px 0;
+    background-color: #006699;
+    box-shadow: 0 0 10px 0;
 }
 
 
@@ -48,7 +48,7 @@ body {
 }
 
 .mdl-layout__header {
-    background-color:#000033;
+    background-color: #000033;
 }
 
 .drawer-header {
@@ -65,7 +65,7 @@ body {
     height: 64px;
     display: block;
     text-align: center;
-padding: 0px;
+    padding: 0px;
 }
 
 .avatar-dropdown {
@@ -279,6 +279,10 @@ _:-ms-input-placeholder,
     border-radius: 50%;
 }
 
+.img-circle-40 {
+    width: 30%;
+}
+
 .img-circle-sm {
     width: 30%;
 }
@@ -288,9 +292,8 @@ _:-ms-input-placeholder,
 }
 
 .logo-bg {
-position: relative;
-height: 20%;
-width: 20%;
+    height: 20%;
+    width: 20%;
 }
 
 .minicard {
@@ -344,12 +347,8 @@ a:hover {
 }
 
 #mini-atalhos {
-display: inline-block;
-text-align: center;
-}
-
-div {
     display: inline-block;
+    text-align: center;
 }
 
 #aside {
@@ -379,7 +378,7 @@ div {
     height: 200px;
 }
 
-.card-event{
+.card-event {
     background-color: #f2f2f2;
 }
 
@@ -1099,8 +1098,8 @@ div {
 .mdl-card-body {
     padding: 3%;
 }
-.postitem
-{
+
+.postitem {
     border-bottom: 1px solid #ccc;
     padding-top: 10px;
     padding-bottom: 10px;
