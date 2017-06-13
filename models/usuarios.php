@@ -24,13 +24,13 @@ class Usuarios extends model {
 				return "E-mail e/ou senha incorretos!";
 			}
 		}
-		public function cadastrar($nome, $email, $senha){
+		public function cadastrar($nome, $email, $disciplina, $instituicao, $senha){
 			$sql = "SELECT * FROM usuarios WHERE email= '$email'";
 			$sql = $this->db->query($sql);
 			
 			if($sql->rowCount == 0){
 
-				$sql = "INSERT INTO usuarios SET nome = '$nome', email= '$email', senha= 'MD5($senha')";
+				$sql = "INSERT INTO usuarios SET nome = '$nome', email= '$email', disciplina='$disciplina', instituicao='$instituicao', senha= 'MD5($senha')";
 				$sql = $this->db->query($sql);
 
 				$id = $this->db->lastInsertId();

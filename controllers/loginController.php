@@ -31,11 +31,13 @@ class loginController extends controller
 
 			$nome = addslashes($_POST['nome']);
 			$email = addslashes($_POST['email']);
-			$senha = addslashes($_POST['senha']);
+			$disciplina = addslashes($_POST['disciplina']);
+			$instituicao = addslashes($_POST['instituicao']);
+			$senha = md5($_POST['senha']);
 
 			$u = new Usuarios();
 
-			$dados['erro'] = $u->cadastrar($nome, $email, $senha);
+			$dados['erro'] = $u->cadastrar($nome, $email, $disciplina, $instituicao, $senha);
 		}
 		$this->loadView('login', $dados); 
 	}
