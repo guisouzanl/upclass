@@ -227,6 +227,9 @@
            <div class="form-group">
             <input type="text" class="form-control input-lg" placeholder="Instituição" name="instituicao" id="instituicao" required maxlength="80">
           </div>
+             <div class="form-group">
+             <textarea class="form-control" rows="5" id="comment" placeholder="Metodologia(Não é obrigatório)" name="metodologia" id="metodologia"></textarea>
+             </div>
           <div class="form-group">
             <input type="password" class="form-control input-lg" placeholder="Senha" name="senha" id="senha" required>
           </div>
