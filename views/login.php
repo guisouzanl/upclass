@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="assets/layout/font-awesome/css/font-awesome.min.css" type="text/css">
 <link rel="stylesheet" href="assets/layout/css/animate.min.css" type="text/css">
 <link rel="stylesheet" href="assets/layout/css/creative.css" type="text/css">
+<link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 </head>
 
 <body id="page-top">
@@ -26,10 +27,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li> <a href="#" data-toggle="modal" data-target="#myModal"><font color="#FF6E00">Login</font></a> </li>
         <li> <a class="page-scroll" href="#about">Sobre</a> </li>
-        <li> <a class="page-scroll" href="#services">Serviços</a> </li>
-        <li> <a class="page-scroll" href="#portfolio">Media</a> </li>
+        <li> <a class="page-scroll" href="#services">Recursos</a> </li>
         <li> <a class="page-scroll" href="#contact">Contato</a> </li>
       </ul>
     </div>
@@ -40,10 +39,12 @@
 <header>
   <div class="header-content">
     <div class="header-content-inner">
-      <h1>UpClass</h1>
+      <img id="logo" src="assets/img/logo.png" alt="UPCLASS" class="logo-bg" href="www.upclass.com">
       <hr>
       <p>Um portal feito para o Professor!</p>
-      <a href="#" class="btn btn-primary btn-xl page-scroll" data-toggle="modal" data-target="#myModal2">Cadastre-se, e gratis!</a> </div>
+      <a href="#" class="btn btn-primary btn-xl page-scroll" data-toggle="modal" data-target="#myModal2">Cadastro</a>
+      <a href="#" class="btn btn-primary btn-xl page-scroll" data-toggle="modal" data-target="#myModal">Login</a>
+       </div>
   </div>
 </header>
 <section class="bg-primary" id="about">
@@ -95,58 +96,10 @@
     </div>
   </div>
 </section>
-<section class="no-padding" id="portfolio">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="col-lg-4 col-sm-6"> <a href="#" class="portfolio-box"> <img src="assets/layout/img/portfolio/1.jpg" class="img-responsive" alt="">
-        <div class="portfolio-box-caption">
-          <div class="portfolio-box-caption-content">
-            <div class="project-category text-faded"> Painel do Professor </div>
-          </div>
-        </div>
-        </a> </div>
-      <div class="col-lg-4 col-sm-6"> <a href="#" class="portfolio-box"> <img src="assets/layout/img/portfolio/2.jpg" class="img-responsive" alt="">
-        <div class="portfolio-box-caption">
-          <div class="portfolio-box-caption-content">
-            <div class="project-category text-faded"> Cadastro de Instituicões </div>
-          </div>
-        </div>
-        </a> </div>
-      <div class="col-lg-4 col-sm-6"> <a href="#" class="portfolio-box"> <img src="assets/layout/img/portfolio/3.jpg" class="img-responsive" alt="">
-        <div class="portfolio-box-caption">
-          <div class="portfolio-box-caption-content">
-            <div class="project-category text-faded"> Cadastro de Turmas </div>
-          </div>
-        </div>
-        </a> </div>
-      <div class="col-lg-4 col-sm-6"> <a href="#" class="portfolio-box"> <img src="assets/layout/img/portfolio/4.jpg" class="img-responsive" alt="">
-        <div class="portfolio-box-caption">
-          <div class="portfolio-box-caption-content">
-            <div class="project-category text-faded"> Upload de Atividades </div>
-          </div>
-        </div>
-        </a> </div>
-      <div class="col-lg-4 col-sm-6"> <a href="#" class="portfolio-box"> <img src="assets/layout/img/portfolio/5.jpg" class="img-responsive" alt="">
-        <div class="portfolio-box-caption">
-          <div class="portfolio-box-caption-content">
-            <div class="project-category text-faded"> Elaboração de Planejamento </div>
-          </div>
-        </div>
-        </a> </div>
-      <div class="col-lg-4 col-sm-6"> <a href="#" class="portfolio-box"> <img src="assets/layout/img/portfolio/6.jpg" class="img-responsive" alt="">
-        <div class="portfolio-box-caption">
-          <div class="portfolio-box-caption-content">
-            <div class="project-category text-faded"> Acompanhar as Turmas </div>
-          </div>
-        </div>
-        </a> </div>
-    </div>
-  </div>
-</section>
 <aside class="bg-dark">
   <div class="container text-center">
     <div class="call-to-action">
-      <h2>Depois de todos esse recursos...</h2>
+      <h2>Com todos esse recursos...</h2>
       <a href="#" class="btn btn-default btn-xl wow tada" data-toggle="modal" data-target="#myModal2">Porque não se cadastrar?</a> </div>
   </div>
 </aside>
@@ -154,15 +107,15 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 text-center">
-        <h2 class="section-heading">Duvidas ou Sugestões?</h2>
+        <h2 class="section-heading">Dúvidas ou Sugestões?</h2>
         <hr class="primary">
-        <p>Entre em contato pelas as informações abaixo!</p>
+        <p>Entre em contato!</p>
       </div>
       <div class="col-lg-4 col-lg-offset-2 text-center"> <i class="fa fa-phone fa-3x wow bounceIn"></i>
         <p>(31)0000-0000</p>
       </div>
       <div class="col-lg-4 text-center"> <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-        <p><a href="mailto:educar@educar.me">educar@educar.me</a></p>
+        <p><a href="mailto:contato@upclass.com">contato@upclass.com</a></p>
       </div>
     </div>
   </div>
@@ -174,7 +127,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h2 class="text-center"><img src="assets/layout/img/110.jpg" class="img-circle"><br>Login</h2>
+        <h2 class="text-center"><img src="assets/layout/img/110.jpg" class="img-circle-40"><br>Login</h2>
       </div>
       <div class="modal-body row">
         <h6 class="text-center">Preencha os campos abaixo para o Login</h6>
