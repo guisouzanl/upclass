@@ -9,15 +9,18 @@ class homeController extends controller
 
 	public function index()
 	{
+		$u = new Usuarios();
+		$p = new Postagens();
+		
 		$dados = array(
 			'usuario_nome' => ''
 			);
-		$u = new Usuarios();
-		$dados['usuario_nome'] = $u->getNome($_SESSION['lgsocial']);
-		$dados['usuario_disciplina'] = $u->getDisciplina($_SESSION['lgsocial']);
-		$dados['usuario_instituicao'] = $u->getInstituicao($_SESSION['lgsocial']);
+		
+		$dados['usuario_nome'] = $u->getNome($_SESSION['lgclass']);
+		$dados['usuario_disciplina'] = $u->getDisciplina($_SESSION['lgclass']);
+		$dados['usuario_instituicao'] = $u->getInstituicao($_SESSION['lgclass']);
 
-		$p = new Postagens();
+		
 
 		if(isset($_POST['post']) && !empty($_POST['post'])){
 			$postmsg = addslashes($_POST['post']);

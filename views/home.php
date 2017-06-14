@@ -59,7 +59,7 @@
             <i class="material-icons">more_vert</i>
           </button>
                     <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="bottom-right-btn">
-                        <li class="mdl-menu__item">Editar Perfil</li>
+                        <li><a href="<?php echo BASE; ?>perfil" class="mdl-menu__item">Editar Perfil</a></li>
                         <li><a href="<?php echo BASE; ?>login/sair" class="mdl-menu__item">Sair</a></li>
                         <li class="mdl-menu__item">Suporte</li>
                     </ul>
@@ -113,7 +113,9 @@
                                 <h2 class="mdl-card__title-text">Postar</h2>
                             </div>
                             <div class="mdl-card-body">
-                               
+                                <form action="#">
+                                    
+                                </form>
                                 <form method="post" enctype="multipart/form-data">
                                     <div class="card-wide mdl-textfield mdl-js-textfield">
                                         <textarea id="texto-post" name="post" class="mdl-textfield__input" type="text" rows="3"></textarea>
@@ -148,8 +150,10 @@
                                 </div>
                             </div>
                             <div class="mdl-card__actions mdl-card--border">
+                                    <button id="btn-publicar" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" value="Enviar">
+                                   Publicar
+                                    </button>
                                     
-                                    <button id="btn-publicar" type="submit" class="btn btn-info" value="Enviar">Publicar</button>
                                 </div>
                         </div>
 						</form>

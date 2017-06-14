@@ -57,7 +57,8 @@
             <i class="material-icons">more_vert</i>
           </button>
                     <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="bottom-right-btn">
-                        <li class="mdl-menu__item">Sair</li>
+                        <li><a href="<?php echo BASE; ?>perfil" class="mdl-menu__item">Editar Perfil</a></li>
+                        <li><a href="<?php echo BASE; ?>login/sair" class="mdl-menu__item">Sair</a></li>
                         <li class="mdl-menu__item">Suporte</li>
                     </ul>
                 </div>
@@ -70,9 +71,9 @@
             <nav class="navigation mdl-navigation">
                 <div class="card">
                     <img src="assets/img/avatar_m.png" class="img-circle" alt="Mônica">
-                    <h1>Mônica</h1>
-                    <p class="title">Professora de matemática</p>
-                    <p>Colégio Tiradentes</p>
+                    <h1><?php echo $viewData['usuario_nome']; ?></h1>
+                    <p class="title">Professor(a) de <?php echo $viewData['usuario_disciplina']; ?></p>
+                    <p><?php echo $viewData['usuario_instituicao']; ?></p>
                     <a href="#"><i class="fa fa-facebook link-social"></i></a>
                     <a href="#"><i class="fa fa-twitter link-social"></i></a>
                     <a href="#"><i class="fa fa-linkedin link-social"></i></a>
@@ -108,38 +109,45 @@
                                  <img src="assets/img/avatar_f.png" class="img-circle-sm" alt="Mônica">
                                  <div class="mdl-tabs__panel" id="img-panel">
                                         <input type="file" class="filestyle" data-input="false" data-buttonText=" Trocar a foto do perfil" data-iconName="glyphicon glyphicon-inbox" name="file"><br/>
-                                <form action="#">
+
+                                <form method="POST">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="nome">
+                                        <input class="mdl-textfield__input" type="text" id="nome" value="<?php echo $info['nome']; ?>">
                                         <label class="mdl-textfield__label" for="nome">NOME</label>
                                     </div>
-                                </form>
-                                <form action="#">
+                              
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="cidade">
-                                        <label class="mdl-textfield__label" for="cidade">CIDADE</label>
+                                        <label class="mdl-textfield__label" for="email"></label>
+                                        <strong>E-mail:</strong></br>
+                                        <?php echo $info['email']; ?>
                                     </div>
-                                </form>
-                                <form action="#">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="email">
-                                        <label class="mdl-textfield__label" for="email">E-MAIL</label>
+                                        <input class="mdl-textfield__input" type="text" id="disciplina">
+                                        <label class="mdl-textfield__label" for="disciplina">DISCIPLINA</label>
                                     </div>
-                                </form>
-                                <form action="#">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="instituicao">
+                                        <label class="mdl-textfield__label" for="instituicao">INSTITUIÇÃO</label>
+                                    </div>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                       
+                                        <strong>Metodologia:</strong></br>
+                                        <input class="mdl-textfield__input" type="text" id="metodologia" value="<?php echo $info['metodologia']; ?>">
+
+                                        
+                                    </div>
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                         <input class="mdl-textfield__input" type="text" id="senha">
                                         <label class="mdl-textfield__label" for="senha">SENHA</label>
                                     </div>
-                                </form>
-                                <form action="#">
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="repetirsenha">
-                                        <label class="mdl-textfield__label" for="repetirsenha">REPITA A SENHA</label>
-                                    </div>
-                                </form>
+                                
                                 <div>
-                                    <br><a id="btn-publicar" type="submit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect btn-success" value="Enviar">Salvar alterações</a>
+
+                                    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                                    Salvar
+                                    </button>
+                                    
+                                    </form>
                                 </div>
                             </div>
                         </div>
