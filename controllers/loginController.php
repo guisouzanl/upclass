@@ -22,10 +22,9 @@ class loginController extends controller
 				$email = addslashes($_POST['email']);
 				$disciplina = addslashes($_POST['disciplina']);
 				$instituicao = addslashes($_POST['instituicao']);
-				$metodologia = addslashes($_POST['metodologia']);
-				$senha = addslashes($_POST['senha']);
+				$senha = md5($_POST['senha']);
 
-				$dados['erro'] = $u->cadastrar($nome, $email, $disciplina, $instituicao, $metodologia, $senha);
+				$dados['erro'] = $u->cadastrar($nome, $email, $disciplina, $instituicao, $senha);
 			}
 
 		}

@@ -10,15 +10,12 @@ class homeController extends controller
 	public function index()
 	{
 		$dados = array(
-				'usuario_nome' => '',
-				'disciplina_nome' => '',
-				'instituicao_nome' => ''
+			'usuario_nome' => ''
 			);
-
 		$u = new Usuarios();
-		$dados['usuario_nome'] = $u->getNome($_SESSION['lgclass']);
-		$dados['disciplina_nome'] = $u->getDisciplina($_SESSION['lgclass']);
-		$dados['instituicao_nome'] = $u->getInstituicao($_SESSION['lgclass']);
+		$dados['usuario_nome'] = $u->getNome($_SESSION['lgsocial']);
+		$dados['usuario_disciplina'] = $u->getDisciplina($_SESSION['lgsocial']);
+		$dados['usuario_instituicao'] = $u->getInstituicao($_SESSION['lgsocial']);
 
 		$p = new Postagens();
 

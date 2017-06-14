@@ -73,12 +73,12 @@
             <nav class="navigation mdl-navigation">
                 <div class="card">
                     <img src="assets/img/avatar_m.png" class="img-circle" alt="nome">
-                    <h1><?php echo $viewData['usuario_nome'];?></h1>
-                    <p class="title">Professor(a) de <?php echo $viewData['disciplina_nome'];?></p>
-                    <p><?php echo $viewData['instituicao_nome'];?></p>
-                    <a href="#"><i class="fa fa-facebook link-social"></i></a>
-                    <a href="#"><i class="fa fa-twitter link-social"></i></a>
-                    <a href="#"><i class="fa fa-linkedin link-social"></i></a>
+                    <h1><?php echo $viewData['usuario_nome']; ?></h1>
+                    <p class="title">Professor(a) de <?php echo $viewData['usuario_disciplina']; ?></p>
+                    <p><?php echo $viewData['usuario_instituicao']; ?></p>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook link-social"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter link-social"></i></a>
+                    <a href="https://br.linkedin.com/"><i class="fa fa-linkedin link-social"></i></a>
                 </div>
                 <div class="mdl-layout-spacer"></div>
                     <div id="mini-atalhos">
@@ -113,12 +113,7 @@
                                 <h2 class="mdl-card__title-text">Postar</h2>
                             </div>
                             <div class="mdl-card-body">
-                                <form action="#">
-                                    <div class="mdl-textfield mdl-js-textfield">
-                                        <input class="mdl-textfield__input" type="text" id="titulo-post">
-                                        <label class="mdl-textfield__label" for="titulo-post">Título</label>
-                                    </div>
-                                </form>
+                               
                                 <form method="post" enctype="multipart/form-data">
                                     <div class="card-wide mdl-textfield mdl-js-textfield">
                                         <textarea id="texto-post" name="post" class="mdl-textfield__input" type="text" rows="3"></textarea>

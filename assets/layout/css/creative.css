@@ -68,14 +68,6 @@ section {
     padding: 100px 0;
 }
 
-#services {
-        height: 95%;
-}
-
-#about {
-        height: 95%;
-}
-
 aside {
     padding: 50px 0;
 }
@@ -186,7 +178,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-color: #000033;
+    background-image: url(../img/header.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -393,9 +385,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #F58634;
+    border-color: #f05f40;
     color: #fff;
-    background-color: #F58634;
+    background-color: #f05f40;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;

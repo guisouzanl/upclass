@@ -25,13 +25,13 @@ class Usuarios extends model {
 				return "E-mail e/ou senha incorretos!";
 			}
 		}
-		public function cadastrar($nome, $email, $disciplina, $instituicao, $metodologia, $senha){
+		public function cadastrar($nome, $email, $disciplina, $instituicao, $senha){
 			$sql = "SELECT * FROM usuarios WHERE email= '$email'";
 			$sql = $this->db->query($sql);
 			
 			if($sql->rowCount() == 0){
 
-				$sql = "INSERT INTO usuarios SET nome = '$nome', sexo = '0', bio = '', email= '$email', disciplina='$disciplina', instituicao='$instituicao', metodologia= '$metodologia', senha = MD5('$senha')";
+				$sql = "INSERT INTO usuarios SET nome = '$nome', sexo = '0', bio = '', email= '$email', disciplina='$disciplina', instituicao='$instituicao', senha = MD5('$senha')";
 				$sql = $this->db->query($sql);
 
 				$id = $this->db->lastInsertId();
@@ -43,42 +43,44 @@ class Usuarios extends model {
 				return "E-mail já está cadastrado";
 			}
 
-
 		}
 		public function getNome($id){
-			$sql = "SELECT nome FROM usuarios WHERE id = '$id'";
+			$sql = "SELECT nome FROM usuarios WHERE id= '$id'";
 			$sql = $this->db->query($sql);
-			if($sql->rowCount() > 0){
-				$sql = $sql->fetch();
 
+			if ($sql->rowCount() > 0) {
+				$sql = $sql->fetch();
 				return $sql['nome'];
 			}
 			else{
 				return '';
 			}
+
 		}
 		public function getDisciplina($id){
-			$sql = "SELECT disciplina FROM usuarios WHERE id = '$id'";
+			$sql = "SELECT disciplina FROM usuarios WHERE id= '$id'";
 			$sql = $this->db->query($sql);
-			if($sql->rowCount() > 0){
-				$sql = $sql->fetch();
 
+			if ($sql->rowCount() > 0) {
+				$sql = $sql->fetch();
 				return $sql['disciplina'];
 			}
 			else{
 				return '';
 			}
+
 		}
 		public function getInstituicao($id){
-			$sql = "SELECT instituicao FROM usuarios WHERE id = '$id'";
+			$sql = "SELECT instituicao FROM usuarios WHERE id= '$id'";
 			$sql = $this->db->query($sql);
-			if($sql->rowCount() > 0){
-				$sql = $sql->fetch();
 
+			if ($sql->rowCount() > 0) {
+				$sql = $sql->fetch();
 				return $sql['instituicao'];
 			}
 			else{
 				return '';
 			}
+
 		}
 }

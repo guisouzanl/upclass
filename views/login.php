@@ -224,4 +224,3 @@ confirm_password.onkeyup = validatePassword;
 <script src="assets/layout/js/creative.js"></script>
 </body>
 </html>
-
