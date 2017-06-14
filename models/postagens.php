@@ -3,6 +3,7 @@ class Postagens extends model
 {
 	public function addPostagens($msg, $foto, $file, $id_grupo = '0'){
 			
+		$usuario = $_SESSION['lgclass'];	
 		$tipo = 'texto';
 		$url = '';
 		if(count($foto) > 0) {
@@ -50,17 +51,21 @@ class Postagens extends model
 			}
 		}
 		
-		$sql = "INSERT INTO postagens SET  data_criacao = NOW(), tipo = '$tipo', texto = '$msg', url = '$url', id_grupo = '$id_grupo'";
-	
+		$sql = "INSERT INTO postagens SET id_usuario = '$usuario',  data_criacao = NOW(), tipo = '$tipo', texto = '$msg', url = '$url', id_grupo = '$id_grupo'";
+		
 		$this->db->query($sql);
 	}
 	public function getAcervo($id_grupo = '0') {
 		$array = array();
+		$a = new Amizades();
+		$ids = $a->getIdsFriends($_SESSION['lgclass']);
+		$ids[] = $_SESSION['lgclass'];
 
 		$sql = "SELECT 
 		*
-		FROM postagens 
+		FROM postagens  WHERE id_usuario IN(".implode(',', $ids).")
 		ORDER BY data_criacao DESC";
+
 		$sql = $this->db->query($sql);
 
 		if($sql->rowCount() > 0) {

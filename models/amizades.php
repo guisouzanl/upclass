@@ -49,6 +49,32 @@ public function getRequisicoes(){
 		return $array;
 		}
 
+		public function getTotalAmigos($id) {
+
+		$sql = "SELECT COUNT(*) as c FROM amizades WHERE (usuario_de = '$id' OR usuario_para = '$id') AND status = '1'";
+		$sql = $this->db->query($sql);
+		$sql = $sql->fetch();
+		
+		return $sql['c'];
+	}
+
+	public function getIdsFriends($id) {
+		$array = array();
+
+		$sql = "SELECT * FROM amizades WHERE (usuario_de = '$id' OR usuario_para = '$id') AND status = '1'";
+		$sql = $this->db->query($sql);
+
+		if($sql->rowCount() > 0) {
+			foreach($sql->fetchAll() as $aitem) {
+				$array[] = $aitem['usuario_de'];
+				$array[] = $aitem['usuario_para'];
+			}
+		}
+
+		return $array;
+	}
+
+
 	}
 
 
