@@ -11,7 +11,7 @@ class Usuarios extends model {
 		public function logar($email, $senha){
 
 			$sql = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
-
+		
 			$sql = $this->db->query($sql);
 
 			if ($sql->rowCount() > 0) {
