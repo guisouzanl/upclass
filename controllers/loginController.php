@@ -5,7 +5,7 @@ class loginController extends controller
 	public function index(){
 		$dados = array();
 
-		$this->loadView('login', $dados);
+		$this->loadView('login2', $dados);
 	}
 
 	public function entrar(){
@@ -22,7 +22,7 @@ class loginController extends controller
 
 		}
 
-		$this->loadView('login', $dados); 
+		$this->loadView('login2', $dados); 
 }
 		public function cadastrar(){
 		$dados = array();
@@ -39,7 +39,7 @@ class loginController extends controller
 
 			$dados['erro'] = $u->cadastrar($nome, $email, $disciplina, $instituicao, $senha);
 		}
-		$this->loadView('login', $dados); 
+		$this->loadView('login2', $dados); 
 	}
 	public function sair(){
 		unset($_SESSION['lgclass']);
