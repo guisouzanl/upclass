@@ -1,7 +1,8 @@
 <?php
 class Usuarios extends model {
 	public function verificarLogin(){
-		if(!isset($_SESSION) || (isset($_SESSION['lgclass']) &&  empty($_SESSION['lgclass']))){
+			
+		if(!isset($_SESSION['lgclass']) || (isset($_SESSION['lgclass']) && empty($_SESSION['lgclass']))) {
 			header("Location: ".BASE."login");
 			exit;
 		}
@@ -24,19 +25,19 @@ class Usuarios extends model {
 				return "E-mail e/ou senha incorretos!";
 			}
 		}
-		public function cadastrar($nome, $email, $disciplina, $instituicao, $senha){
+		public function cadastrar($nome, $email, $disciplina, $instituicao, $metodologia, $senha){
 			$sql = "SELECT * FROM usuarios WHERE email= '$email'";
 			$sql = $this->db->query($sql);
 			
-			if($sql->rowCount == 0){
+			if($sql->rowCount() == 0){
 
-				$sql = "INSERT INTO usuarios SET nome = '$nome', email= '$email', disciplina='$disciplina', instituicao='$instituicao', senha= 'MD5($senha')";
+				$sql = "INSERT INTO usuarios SET nome = '$nome', sexo = '0', bio = '', email= '$email', disciplina='$disciplina', instituicao='$instituicao', metodologia= '$metodologia', senha = MD5('$senha')";
 				$sql = $this->db->query($sql);
 
 				$id = $this->db->lastInsertId();
 				$_SESSION['lgclass'] = $id;
 				header("Location: ".BASE);
-
+				exit;
 			}
 			else{
 				return "E-mail já está cadastrado";

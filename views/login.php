@@ -17,6 +17,9 @@
 </head>
 
 <body id="page-top">
+<?php if(!empty($erro)): ?>
+<script type="text/javascript">alert('<?php echo $erro; ?>');</script>
+<?php endif ?>
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -131,11 +134,9 @@
       </div>
       <div class="modal-body row">
         <h6 class="text-center">Preencha os campos abaixo para o Login</h6>
-        <?php 
-        if(!empty($erro)): ?>
-        <div class="alert alert-danger"><?php echo $erro; ?></div>
-      <?php endif ?>
-        <form class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0" action="index.php" method="post">
+
+        <form class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0" action="<?php echo BASE.'login'; ?>" method="post">
+        <input type="hidden" name="action" value="login" />
           <div class="form-group">
             <input type="email" class="form-control input-lg" placeholder="Email" name="email" id="email" required>
           </div>
@@ -165,23 +166,23 @@
       </div>
       <div class="modal-body row">
         <h6 class="text-center">Preencha os campos abaixo para se cadastrar</h6>
-        <?php 
-        if(!empty($erro)): ?>
-        <div class="alert alert-danger"><?php echo $erro; ?></div>
-        <?php endif ?>
-        <form class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0" action="#" method="post">
+        <form class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0"  action="<?php echo BASE.'login'; ?>" method="post">
+          <input type="hidden" name="action" value="cadastrar" />
           <div class="form-group">
-            <input type="text" class="form-control input-lg" placeholder="Nome" name="nome" required maxlength="80">
+            <input type="text" class="form-control input-lg" placeholder="Nome" name="nome" id="nome" required maxlength="80">
           </div>
           <div class="form-group">
-            <input type="email" class="form-control input-lg" placeholder="Email" name="email" required maxlength="60">
+            <input type="email" class="form-control input-lg" placeholder="Email" name="email" id="email" required maxlength="60">
           </div>
            <div class="form-group">
-            <input type="text" class="form-control input-lg" placeholder="Disciplina" name="disciplina" required maxlength="80">
+            <input type="text" class="form-control input-lg" placeholder="Disciplina" name="disciplina" id="disciplina" required maxlength="80">
           </div>
            <div class="form-group">
-            <input type="text" class="form-control input-lg" placeholder="Instituição" name="instituicao" required maxlength="80">
+            <input type="text" class="form-control input-lg" placeholder="Instituição" name="instituicao" id="instituicao" required maxlength="80">
           </div>
+             <div class="form-group">
+             <textarea class="form-control" rows="5" id="comment" placeholder="Metodologia(Não é obrigatório)" name="metodologia" id="metodologia"></textarea>
+             </div>
           <div class="form-group">
             <input type="password" class="form-control input-lg" placeholder="Senha" name="senha" id="senha" required>
           </div>
