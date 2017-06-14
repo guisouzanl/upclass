@@ -153,15 +153,7 @@
                                 </div>
                             </div>
                             <div class="mdl-card__actions mdl-card--border">
-                                    <div class="dropup">
-                                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Selecionar grupo
- <span class="caret"></span></button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Grupo 1</a></li>
-                                            <li><a href="#">Grupo 2</a></li>
-                                            <li><a href="#">Grupo 3</a></li>
-                                        </ul>
-                                    </div>
+                                    
                                     <button id="btn-publicar" type="submit" class="btn btn-info" value="Enviar">Publicar</button>
                                 </div>
                         </div>
