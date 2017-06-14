@@ -72,10 +72,10 @@
             </header>
             <nav class="navigation mdl-navigation">
                 <div class="card">
-                    <img src="assets/img/avatar_m.png" class="img-circle" alt="Mônica">
-                    <h1>Mônica</h1>
-                    <p class="title">Professora de matemática</p>
-                    <p>Colégio Tiradentes</p>
+                    <img src="assets/img/avatar_m.png" class="img-circle" alt="nome">
+                    <h1><?php echo $viewData['usuario_nome'];?></h1>
+                    <p class="title">Professor(a) de <?php echo $viewData['disciplina_nome'];?></p>
+                    <p><?php echo $viewData['instituicao_nome'];?></p>
                     <a href="#"><i class="fa fa-facebook link-social"></i></a>
                     <a href="#"><i class="fa fa-twitter link-social"></i></a>
                     <a href="#"><i class="fa fa-linkedin link-social"></i></a>

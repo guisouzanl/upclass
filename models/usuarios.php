@@ -45,4 +45,40 @@ class Usuarios extends model {
 
 
 		}
+		public function getNome($id){
+			$sql = "SELECT nome FROM usuarios WHERE id = '$id'";
+			$sql = $this->db->query($sql);
+			if($sql->rowCount() > 0){
+				$sql = $sql->fetch();
+
+				return $sql['nome'];
+			}
+			else{
+				return '';
+			}
+		}
+		public function getDisciplina($id){
+			$sql = "SELECT disciplina FROM usuarios WHERE id = '$id'";
+			$sql = $this->db->query($sql);
+			if($sql->rowCount() > 0){
+				$sql = $sql->fetch();
+
+				return $sql['disciplina'];
+			}
+			else{
+				return '';
+			}
+		}
+		public function getInstituicao($id){
+			$sql = "SELECT instituicao FROM usuarios WHERE id = '$id'";
+			$sql = $this->db->query($sql);
+			if($sql->rowCount() > 0){
+				$sql = $sql->fetch();
+
+				return $sql['instituicao'];
+			}
+			else{
+				return '';
+			}
+		}
 }
