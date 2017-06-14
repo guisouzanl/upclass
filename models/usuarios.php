@@ -96,15 +96,19 @@ class Usuarios extends model {
 	public function updatePerfil($array = array() ){
 		if (count($array) > 0) {
 			$sql = "UPDATE usuarios SET ";
-			$campos = array();
-			foreach ($array as $key => $value) {
-				$campos[] .= $key." = '".$value. "'";
-			}
-			$sql .= implode(', ', $campos);
+				$campos = array();
+				foreach ($array as $campo => $valor) {
+					$campos[] .= $campo." = '".$valor."'"; 
+				}
+				$sql .= implode(', ', $campos);
 
-			$sql .= " WHERE id = '".($_SESSION['lgclass'])."'";
-			echo $sql; exit;
-			$this->db->query($sql);
+				$sql .= " WHERE id = '".($_SESSION['lgclass'])."'";
+			
+				$this->db->query($sql);
 		}
 	}
+	
+
+		
+
 }

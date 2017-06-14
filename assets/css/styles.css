@@ -1104,3 +1104,8 @@ a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.sugestaoitem{
+    height: 60px;
+    line-height: 50px;
+
+}

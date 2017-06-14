@@ -109,6 +109,7 @@
                                  <img src="assets/img/avatar_f.png" class="img-circle-sm" alt="Mônica">
                                  <div class="mdl-tabs__panel" id="img-panel">
                                         <input type="file" class="filestyle" data-input="false" data-buttonText=" Trocar a foto do perfil" data-iconName="glyphicon glyphicon-inbox" name="file"><br/>
+                             
 
                                 <form method="POST">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -122,11 +123,11 @@
                                         <?php echo $info['email']; ?>
                                     </div>
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="disciplina">
+                                        <input class="mdl-textfield__input" type="text" id="disciplina" value="<?php echo $info['instituicao']; ?>">
                                         <label class="mdl-textfield__label" for="disciplina">DISCIPLINA</label>
                                     </div>
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="instituicao">
+                                        <input class="mdl-textfield__input" type="text" id="instituicao" value="<?php echo $info['disciplina']; ?>">
                                         <label class="mdl-textfield__label" for="instituicao">INSTITUIÇÃO</label>
                                     </div>
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">

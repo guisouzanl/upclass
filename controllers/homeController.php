@@ -11,11 +11,8 @@ class homeController extends controller
 	{
 		$u = new Usuarios();
 		$p = new Postagens();
-		
-		$dados = array(
-			'usuario_nome' => ''
-			);
-		
+		$a = new Amizades();
+
 		$dados['usuario_nome'] = $u->getNome($_SESSION['lgclass']);
 		$dados['usuario_disciplina'] = $u->getDisciplina($_SESSION['lgclass']);
 		$dados['usuario_instituicao'] = $u->getInstituicao($_SESSION['lgclass']);
@@ -38,6 +35,9 @@ class homeController extends controller
 			
 			$p->addPostagens($postmsg, $foto, $file);
 		}
+
+		$dados['sugestoes'] = $a->getSugestoes(3);
+		$dados['requisicoes'] = $a->getRequisicoes();
 
 		$dados['acervo'] = $p->getAcervo();
 

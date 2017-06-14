@@ -9,6 +9,9 @@ class perfilController extends controller
 
 	public function index()
 	{
+		$dados = array(
+			'usuario_nome' => ''
+			);
 		$u = new Usuarios();
 
 		if(isset($_POST['nome']) && !empty($_POST['nome'])){
@@ -28,8 +31,9 @@ class perfilController extends controller
 
 			if(isset($_POST['senha']) && !empty($_POST['senha'])){
 				$senha = md5($_POST['senha']);
-				$u->updatePerfil(array
-					('senha' => $senha
+				
+				$u->updatePerfil(array(
+				'senha' => $senha
 					));
 		}
 	}

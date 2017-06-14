@@ -285,6 +285,18 @@
                                 <h4>Solicitações pendentes</h4>
                             </div>
                             <div panel class="mdl-list">
+                                <?php foreach($requisicoes as $pessoa): ?>
+                                <div class="requisicaoitem">
+                                <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
+                                <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
+                                <span class="mdl-chip__text"><?php echo $pessoa['nome']; ?></span>
+                                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="aceitarAmigo('<?php echo $pessoa['id']; ?>', this)">
+                                <i class="material-icons">add</i>
+                                </button>
+                                
+                                </div/>
+                                <?php endforeach; ?>
+
                             </div>
                         </div><br>
                         <!-- Sugestões de contatos - baseado nos contact chips W3Schools 
@@ -294,21 +306,17 @@
                                 <h4>Sugestões de contatos</h4>
                             </div>
                             <div panel class="mdl-list">
+                                <?php foreach($sugestoes as $pessoa): ?>
+                                <div class="sugestaoitem">
                                 <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
- <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
- <span class="mdl-chip__text">Adrienne</span>
-                                <a href="#" class="mdl-chip__action"><i class="material-icons">add</i></a>
-                                </span><br>
-                                <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
- <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
- <span class="mdl-chip__text">Roberto</span>
-                                <a href="#" class="mdl-chip__action"><i class="material-icons">add</i></a>
-                                </span><br>
-                                <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
- <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
- <span class="mdl-chip__text">Joana</span>
-                                <a href="#" class="mdl-chip__action"><i class="material-icons">add</i></a>
-                                </span><br>
+                                <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
+                                <span class="mdl-chip__text"><?php echo $pessoa['nome']; ?></span>
+                                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="addAmigo('<?php echo $pessoa['id']; ?>', this)">
+                                <i class="material-icons">add</i>
+                                </button>
+                                
+                                </div>
+                                <?php endforeach; ?>
 
                             </div>
                         </div>
